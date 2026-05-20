@@ -6,14 +6,9 @@ name: Validate skills
 
 on:
   pull_request:
-    paths:
-      - "**/*"
-      - "!.github/**"
-      - "!**.md"
   push:
     branches: [main]
-    paths-ignore:
-      - ".github/**"
+  workflow_dispatch:
 
 jobs:
   validate:
