@@ -1,0 +1,46 @@
+{
+  "name": "woolworths-refund-helper",
+  "displayName": "Woolworths Refund Helper",
+  "version": "1.0.0",
+  "description": "Draft Consumer Guarantees Act-compliant refund requests for poor-quality Woolworths NZ deliveries.",
+  "longDescription": "Helps you draft a clear, CGA-compliant refund request for a Woolworths NZ online delivery. Reviews receipts and photos of the problem, identifies the items affected, references the right section of the Consumer Guarantees Act 1993, and produces the message to send via the Woolworths app / contact form. Does not file the refund itself — it prepares the request and waits for you to confirm before doing anything that needs your account.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/woolworths-refund-helper",
+  "regions": ["nz"],
+  "categories": ["retail", "legal"],
+  "tags": [
+    "woolworths",
+    "refund",
+    "grocery",
+    "consumer-guarantees-act",
+    "cga",
+    "online-shopping"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0",
+    "windsurf": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:downloads",
+      "read:photos",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low",
+  "verified": false
+}

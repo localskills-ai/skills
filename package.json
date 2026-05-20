@@ -1,0 +1,15 @@
+{
+  "name": "@localskills/skills",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Localskills.ai skill monorepo — global directory of regional AI skills.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "validate:all": "node scripts/validate.mjs --all"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
