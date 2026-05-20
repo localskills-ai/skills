@@ -1,0 +1,61 @@
+name: Validate skills
+
+# Runs the Localskills validation pipeline on every PR and every push to main.
+# Same script you run locally (scripts/validate.mjs) — if it fails on your
+# machine, it fails here, and vice versa.
+
+on:
+  pull_request:
+    paths:
+      - "**/*"
+      - "!.github/**"
+      - "!**.md"
+  push:
+    branches: [main]
+    paths-ignore:
+      - ".github/**"
+
+jobs:
+  validate:
+    name: Schema + safety checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "20"
+
+      - name: Run validator
+        run: node scripts/validate.mjs --all
+
+      - name: Comment on PR if validation failed
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                "## Validation failed",
+                "",
+                "The Localskills validator (`scripts/validate.mjs`) rejected this submission.",
+                "Run it locally to see the full error output:",
+                "",
+                "```sh",
+                "node scripts/validate.mjs --all",
+                "```",
+                "",
+                "Common causes:",
+                "- Missing required files (skill.json, README.md, SKILL.md, LICENSE, CHANGELOG.md)",
+                "- Manifest schema mismatch (kebab-case slug, semver version, valid region code)",
+                "- Prompt-injection patterns or zero-width characters in SKILL.md",
+                "- Hardcoded credentials or AWS keys in any file",
+                "- Permissions wider than the skill needs",
+                "",
+                "See [the moderation policy](https://localskills.ai/moderation-policy) and [the docs](https://localskills.ai/docs)."
+              ].join("\n")
+            })
