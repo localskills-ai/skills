@@ -1,0 +1,44 @@
+{
+  "name": "resource-consent-checker",
+  "displayName": "Resource Consent Checker",
+  "version": "1.0.0",
+  "description": "Sanity-checks whether your proposed building work needs a resource consent or building consent under NZ council rules.",
+  "longDescription": "You describe what you want to do (deck, fence, retaining wall, new dwelling, alteration, sleepout). The skill identifies which council you're in, references the relevant district plan rules and Schedule 1 of the Building Act 2004 (exempt building work), and tells you whether you likely need a building consent, a resource consent, both, or neither. It is advisory and conservative — when in doubt, it recommends ringing your council's duty planner.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "regions": ["nz"],
+  "categories": ["property", "legal"],
+  "tags": [
+    "resource-consent",
+    "building-consent",
+    "council",
+    "rma",
+    "building-act",
+    "property"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:documents",
+      "read:downloads",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "medium",
+  "verified": false
+}

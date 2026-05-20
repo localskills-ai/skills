@@ -1,0 +1,44 @@
+{
+  "name": "mymsd-form-helper",
+  "displayName": "MyMSD Form Helper",
+  "version": "1.0.0",
+  "description": "Helps you fill in NZ MSD (Work & Income) forms for benefits, accommodation supplement, and reviews. Drafts only — you submit.",
+  "longDescription": "Translates the bureaucratic language of MSD / Work & Income forms into plain English, helps you gather the supporting evidence each section needs, and produces a draft you can copy into MyMSD. Covers Jobseeker Support, Sole Parent Support, Supported Living Payment, Accommodation Supplement, Special Needs Grant, and re-applications / reviews. Does not log into MyMSD. Does not file. Strict about not giving legal or financial advice.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "regions": ["nz"],
+  "categories": ["government", "legal"],
+  "tags": [
+    "msd",
+    "winz",
+    "mymsd",
+    "benefits",
+    "jobseeker",
+    "accommodation-supplement"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:documents",
+      "read:downloads",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "medium",
+  "verified": false
+}

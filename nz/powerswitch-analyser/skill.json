@@ -1,0 +1,44 @@
+{
+  "name": "powerswitch-analyser",
+  "displayName": "Powerswitch Analyser",
+  "version": "1.0.0",
+  "description": "Analyses your NZ power bill and tells you if a different retailer would be cheaper. Uses Consumer NZ's Powerswitch logic locally.",
+  "longDescription": "Reads your power bill (PDF or pasted text), extracts your usage profile (daily charge, kWh totals, peak/off-peak split if applicable, lines company), and compares against a static snapshot of NZ power retailer plans. Tells you which retailers would likely be cheaper for your usage, by how much annually, and what the switching friction is. Encourages you to verify on Powerswitch.org.nz before switching. Does not switch on your behalf.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "regions": ["nz"],
+  "categories": ["utilities", "finance"],
+  "tags": [
+    "power",
+    "electricity",
+    "powerswitch",
+    "consumer-nz",
+    "switching",
+    "cost-of-living"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:downloads",
+      "read:documents",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low",
+  "verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "name": "ird-gst-return-helper",
+  "displayName": "IRD GST Return Helper",
+  "version": "1.0.0",
+  "description": "Drafts NZ IRD GST returns from receipts and invoices. Computes Box 5 / Box 11 / Box 13 figures. Does not file.",
+  "longDescription": "Helps NZ businesses prepare a GST return. Reads invoices, receipts, and bank exports the user provides; classifies transactions as standard-rated, zero-rated, exempt, or out-of-scope; computes the totals for each box on the IRD GST101A form; and produces a summary the user can copy into myIR. Does not submit anything to IRD. Strict about what it will not do: no tax advice, no estimation of provisional tax, no opinion on whether something is deductible.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/ird-gst-return-helper",
+  "regions": ["nz"],
+  "categories": ["finance", "business"],
+  "tags": [
+    "ird",
+    "gst",
+    "myir",
+    "small-business",
+    "accounting",
+    "tax-return"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:downloads",
+      "read:documents",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "medium",
+  "verified": false
+}

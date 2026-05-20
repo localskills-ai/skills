@@ -1,0 +1,45 @@
+{
+  "name": "trademe-listing-drafter",
+  "displayName": "Trade Me Listing Drafter",
+  "version": "1.0.0",
+  "description": "Drafts a complete Trade Me marketplace listing from photos and a one-line description.",
+  "longDescription": "You have a thing to sell. You have photos. You don't have the time to write a title that ranks, a description that converts, and choose the right category. This skill takes your photos and a one-line description and produces a full listing — title, category suggestion, condition wording, key spec bullets, dimensions/measurements if extractable from photos, and the description body. NZ tone, Trade Me-appropriate categories, no clickbait. Does not list. You paste into Trade Me.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/trademe-listing-drafter",
+  "regions": ["nz"],
+  "categories": ["retail", "business"],
+  "tags": [
+    "trademe",
+    "marketplace",
+    "listing",
+    "second-hand",
+    "selling",
+    "auction"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:photos",
+      "read:downloads",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low",
+  "verified": false
+}

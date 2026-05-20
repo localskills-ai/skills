@@ -1,0 +1,43 @@
+{
+  "name": "auckland-transport-helper",
+  "displayName": "Auckland Transport Helper",
+  "version": "1.0.0",
+  "description": "Helps with AT HOP card, journey planning, fare disputes, and the AT Mobile / website friction points.",
+  "longDescription": "Handles the messy bits of Auckland public transport — drafting AT HOP balance / refund / fare-dispute messages, decoding an AT Mobile journey plan that doesn't make sense, working out the right concession for your age / status, and helping with lost-card replacement. Also drafts complaints when an AT or NX1/NX2 bus doesn't show. Not authoritative on fares — directs to AT's site for current pricing.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "regions": ["nz-akl"],
+  "categories": ["transport", "lifestyle"],
+  "tags": [
+    "at-hop",
+    "auckland-transport",
+    "public-transport",
+    "bus",
+    "train",
+    "ferry"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:downloads",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low",
+  "verified": false
+}
