@@ -4,7 +4,7 @@
     "name": "companies-office-annual-return",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:26:46.809Z",
+  "auditedAt": "2026-05-21T01:43:47.612Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"

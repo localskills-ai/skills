@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "skill": {
-    "name": "paknsave-price-tracker",
+    "name": "companies-register-search",
     "version": "1.0.0"
   },
-  "auditedAt": "2026-05-21T01:43:47.624Z",
+  "auditedAt": "2026-05-21T01:46:32.418Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,10 +21,10 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:d9056996e608d2037da4dfe3ae78bb831c49e3dad50bce298e75aab571ed1a9f",
-    "README.md": "sha256:a4bcf70a7528512b512de8d8d5f920920fccd7e0a21d5d1c9c0f869232d0e7a7",
-    "SKILL.md": "sha256:d11fb11dfb18a332f742591cea3ebe174d16e438dcaca66993affe6c5545282f",
+    "skill.json": "sha256:0067e4b59032347994e3931cc210051422a1fd20ccb44e56199b7110ca997669",
+    "README.md": "sha256:0259b62a0dca20f721e0e7551c74f25beb653868e1ab13dbbdc5d26a8c9e525d",
+    "SKILL.md": "sha256:60dc53421d6ae6392c4a6dc83f7a779cd0ffe30a8057a2efec08ff8ccd9fa809",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:9fae4770deaad47f7009d4c503729db9157e6b34a5f5f62f66139732a4eefbf8"
+    "CHANGELOG.md": "sha256:afdfe69e9520f1821b11fcbf47e2248a6956917973ac6af5addee61ac8746051"
   }
 }

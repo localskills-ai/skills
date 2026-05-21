@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "powerswitch-analyser",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:26:46.822Z",
+  "auditedAt": "2026-05-21T01:43:47.625Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,10 +26,10 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:2a65db4e710a74d08df15e2f614c728d97a89a30b799517a1953c7fd4683bd64",
+    "skill.json": "sha256:47fc9a7de0cba09c9b63491e5315301ad721ff0f49bd9c28a177a288a0da82f9",
     "README.md": "sha256:7be6fcc5d3f1f549589a6b7c2ee35c908f7d66b4c8e8484a1a11d6d33c079edd",
-    "SKILL.md": "sha256:c2c511f08b47ca3715f715be5afa979216cd61e98f04399c6c7d14ce970dddf1",
+    "SKILL.md": "sha256:9a0e6bb8e4f142c68c7f3ebf9f8dd8ac79aeb6a74f9f8753ce6868ed44e715ba",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:59da32720e7a767a257e954627f9cf9a147dc5632a7e5964dcf1695351d5df6b"
+    "CHANGELOG.md": "sha256:f1ca30cc3ab7ebdb8711ba32d3e89db4f6aa58124de762c36b8b8a9052c96d5c"
   }
 }

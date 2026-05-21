@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "nz-post-tracking-helper",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:26:46.819Z",
+  "auditedAt": "2026-05-21T01:43:47.622Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,10 +26,10 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:c00c3861163ab0d6e8284f3ceb04cfdd505f33f1d2289a5529da852792a12b55",
+    "skill.json": "sha256:99b47b59d2ce09fbe2620b35e85bb1d07faa17c47bce2ee36d5c6e10d3d7de93",
     "README.md": "sha256:2ef0e6e7ede26237cbe9ddc404c4d467969172f60826f8f9a7aef1bfbeaf9edf",
-    "SKILL.md": "sha256:ff54501b993647cb2802e95b640c6b5199ddad661b2aed1da32cd0a02c381bfb",
+    "SKILL.md": "sha256:72152771d8fbf7c9f1db49893f9c841eaccd5aea4ede1d70212b2cf7f09c8b8c",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:3fd2a926531cc74549895c84b4c7cb317460568c57584074204931bcfebcb463"
+    "CHANGELOG.md": "sha256:afed6ecee70d086565e051099d31effdc88dad59bc56af1311320ee0971945b2"
   }
 }

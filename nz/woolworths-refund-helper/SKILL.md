@@ -75,16 +75,17 @@ What to do next
 5. If you don't get a reply within 5 working days, follow up referencing this message.
 ```
 
-## When to use s7 (fitness for purpose) instead of s6
+## When to use s 8 (fitness for particular purpose) instead of s 6
 
-Default to **s6 — acceptable quality** for food/grocery quality problems. That's the right hook 95% of the time.
+Default to **s 6 — acceptable quality** for food/grocery quality problems. That's the right hook 95% of the time.
 
-Use **s7 — fitness for a particular purpose** only when:
+(Note: s 6 is the guarantee itself; s 7 is the section that defines what "acceptable quality" means — the test of what a reasonable consumer would regard as acceptable. You cite s 6, not s 7, when asking for a remedy.)
 
-- The user explicitly stated a purpose to Woolworths (e.g. a special-order gluten-free item that arrived not gluten-free) AND
-- The retailer's recommendation or knowledge of that purpose can be shown.
+Use **s 8 — fitness for a particular purpose** only when:
 
-If unsure, use s6. Don't speculate.
+- The user explicitly stated a purpose to Woolworths (e.g. a special-order gluten-free item that arrived not gluten-free) AND the retailer's knowledge of that purpose is documented (request notes, written instructions).
+
+If unsure, use s 6. Don't speculate.
 
 ## Refusal cases
 

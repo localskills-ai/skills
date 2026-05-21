@@ -1,0 +1,45 @@
+{
+  "name": "companies-register-search",
+  "displayName": "NZ Companies Register Search",
+  "version": "1.0.0",
+  "description": "Looks up NZ companies on the Companies Register. Due diligence, director / shareholder checks, liquidation flags.",
+  "longDescription": "Helps you investigate a NZ company before doing business with it. Walks you through the right search (by company name, NZBN, or director), explains the search results so you don't miss the obvious red flags (notice of removal, liquidation, struck-off), and produces a clean due-diligence summary. Read-only: the skill never makes changes to the register. Cites the Companies Act 1993 sections where relevant. Does not contact the Companies Office API.",
+  "creator": {
+    "username": "paulgnz",
+    "displayName": "Paul Grey",
+    "url": "https://secondbrain.nz"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/companies-register-search",
+  "regions": ["nz"],
+  "categories": ["business", "legal"],
+  "tags": [
+    "companies-office",
+    "nzbn",
+    "due-diligence",
+    "company-search",
+    "directors",
+    "shareholders"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0",
+    "windsurf": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:downloads",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low",
+  "verified": false
+}

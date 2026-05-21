@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "woolworths-refund-helper",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:26:46.828Z",
+  "auditedAt": "2026-05-21T01:43:47.630Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,10 +26,10 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:2a84e2dcfaad8e57566c9dfae9159ffe84a2f4ca85850000bc29ebaa87355b3f",
+    "skill.json": "sha256:3112a77d591a3e47d7748479dd4ed68501790461ac978e153c4913da2ed054cd",
     "README.md": "sha256:e92e47d5dcc78b676a6793c7c0bf0e699516cbd8faf201063abdf5b86e31be97",
-    "SKILL.md": "sha256:5de952a13a693c5e7ed1d093c0be1238bd8c765b86edb9f0960b50de76a002d0",
+    "SKILL.md": "sha256:9b82ecdbb5f9a871c8cbb2179ab55409eeaead111514f63e4cb00d163ac67a43",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:bafe84ed1f01998c73111fa4016bd9b95ba54daf933fbe81d1e6dc53a2deb991"
+    "CHANGELOG.md": "sha256:1a38d678629b241f20338eae40f4d3da4f075f0288fecbfed0ef3dd4ac39b4e0"
   }
 }
