@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "skill-creator",
+    "version": "1.0.0"
+  },
+  "auditedAt": "2026-05-21T02:18:03.873Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.2.0"
+  },
+  "result": "pass",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network"
+  ],
+  "errors": [],
+  "warnings": [],
+  "hashes": {
+    "skill.json": "sha256:d646c32b726a353841b55bfa7c7251ca6940b013aad2b9125055e1abf2de9c2e",
+    "README.md": "sha256:185cf57e7a06777d6ca6a99e97c71fd78ca006ed7d7e9435d22cf33cbf6c3735",
+    "SKILL.md": "sha256:9cb97ef4322b9f6c29ba7d956cddc2d3d6dea2f3854b67491d3bef0282ab7b44",
+    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
+    "CHANGELOG.md": "sha256:b849ac23c9185cdb05fad934c32903c43f74f911e4ca1023683d2f1e5491f31f"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "skill-creator",
+  "displayName": "Skill Creator",
+  "version": "1.0.0",
+  "description": "Walks you through demonstrating a real task, then generates a complete Localskills.ai skill folder ready to submit.",
+  "longDescription": "The meta-skill. Install it into Claude Desktop (or any agent with Computer Use), then ask Claude to help you author a new Localskills skill. The skill makes you do the target task once with Claude watching, identifies the target interface (chatbot, web app, portal), extracts the operating rules and refusal cases from your demonstration, and outputs a complete skill folder: skill.json, SKILL.md, README.md, CHANGELOG.md, and at least two worked examples. Validates against the Localskills schema before handing it back.",
+  "creator": {
+    "username": "localskills",
+    "displayName": "Localskills",
+    "url": "https://localskills.ai"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/global/skill-creator",
+  "regions": ["global"],
+  "categories": ["developer", "utilities"],
+  "tags": [
+    "meta",
+    "authoring",
+    "scaffold",
+    "computer-use",
+    "contributor",
+    "onboarding"
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "claude-desktop": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "codex": ">=1.0.0",
+    "windsurf": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [
+      "read:downloads",
+      "read:documents",
+      "write:outputs"
+    ],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low",
+  "executionModel": "computer-use-recommended",
+  "verified": true
+}
