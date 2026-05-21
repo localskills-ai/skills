@@ -230,6 +230,17 @@ function validateManifest(manifest, issues) {
   ) {
     issues.error("schema", "safetyLevel must be low|medium|high|restricted");
   }
+  if (
+    manifest.executionModel &&
+    !["draft-only", "computer-use-recommended", "computer-use-required"].includes(
+      manifest.executionModel
+    )
+  ) {
+    issues.error(
+      "schema",
+      "executionModel must be draft-only|computer-use-recommended|computer-use-required"
+    );
+  }
 }
 
 function checkPermissionsScope(manifest, issues) {

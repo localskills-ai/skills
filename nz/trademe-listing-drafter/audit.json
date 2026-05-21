@@ -4,7 +4,7 @@
     "name": "trademe-listing-drafter",
     "version": "1.0.0"
   },
-  "auditedAt": "2026-05-21T01:43:47.628Z",
+  "auditedAt": "2026-05-21T02:00:53.859Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,7 +21,7 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:81c7bea7738b2acceeb2d3a08e718a4be891413a823360333c408a56cedd7d1f",
+    "skill.json": "sha256:4e6646aa4d8ed80127641ea1c3833ba507b2d9155b253f5fdd191abff0c80cb4",
     "README.md": "sha256:a1e2049c66c57431f459a86362e75bb72de2969ed3acba462a552d7584673ca6",
     "SKILL.md": "sha256:9cb21144d97937a72583ccd37e4dda10ab8f53ae2e29a327cd22aec10f07dfae",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

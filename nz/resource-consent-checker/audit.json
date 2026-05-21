@@ -4,7 +4,7 @@
     "name": "resource-consent-checker",
     "version": "1.0.0"
   },
-  "auditedAt": "2026-05-21T01:43:47.627Z",
+  "auditedAt": "2026-05-21T02:00:53.857Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,7 +21,7 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:2f5d94673cc40d5474e11e61200dc7a337c2d4778a3279dae780414c1f422900",
+    "skill.json": "sha256:50d670a1a34fc875bd34e1fed48a50ade6e14a38538dfb45aa5507168dc8d6e9",
     "README.md": "sha256:10e6fbf4595690feea9192bff58361fd82b69c50186f530f841d20690edb83a1",
     "SKILL.md": "sha256:743b87080e38da2c9446af30bdd71b92aebf6af0abef0fe39e57fa07f470d2d5",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

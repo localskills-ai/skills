@@ -4,7 +4,7 @@
     "name": "ird-gst-return-helper",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:43:47.619Z",
+  "auditedAt": "2026-05-21T02:00:53.849Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,7 +26,7 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:49652d692dee35a3866ea158a80fc45b8f9f4563d81b702906e3cfb538086de0",
+    "skill.json": "sha256:f69df95a90afd0b13d55802cf387015ea65668e9ad1e79a37c49b89a18bf7960",
     "README.md": "sha256:38bf4b384ffd57f2025da667a7659256654ef1019a1ca5499183179a4f685d66",
     "SKILL.md": "sha256:51cf6f26dc63a06df69ddb6f4047a4e93e00183397609c09ce2b267f0f072b29",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

@@ -4,7 +4,7 @@
     "name": "mymsd-form-helper",
     "version": "1.0.0"
   },
-  "auditedAt": "2026-05-21T01:43:47.621Z",
+  "auditedAt": "2026-05-21T02:00:53.851Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,7 +26,7 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:37f7f3dd3b1e4e51666260e82ddf29fa56f3f10e94f18ff3049fb231e1643a74",
+    "skill.json": "sha256:42054883675024f9399023a52182367ea333ec0004fc318ca2ff04e9d0dea84d",
     "README.md": "sha256:5f451d40ac6db952ebde865fbb21f2b5e9da1059f2769020fb35d305ae54d359",
     "SKILL.md": "sha256:e864c099926cffe7dff7239a2c92a95fe529276d66b01a819690226913e336bb",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

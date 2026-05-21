@@ -4,7 +4,7 @@
     "name": "companies-office-annual-return",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:43:47.612Z",
+  "auditedAt": "2026-05-21T02:00:53.845Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,7 +21,7 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:a95155042d827f23b7deec46938cf9802e52ebe45f0251c9a6cc84b6ba323fec",
+    "skill.json": "sha256:c854c1927ec0ef5ffc9fa09ae038c89167c1eedda77ad596a237ff24d8603921",
     "README.md": "sha256:603973a9ff96ec56fb86855435e3b9b287c665e02beab0a546c20116a2a8226c",
     "SKILL.md": "sha256:780f8552588ec05e96da251e93bb08392658300ff6dab7b703d07d5b958ec352",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

@@ -4,7 +4,7 @@
     "name": "auckland-transport-helper",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T01:43:47.632Z",
+  "auditedAt": "2026-05-21T02:00:53.862Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,7 +26,7 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:dfa654fd84f1dd4afcfae483b406d01a8350b30318748de8c76e49f302e32738",
+    "skill.json": "sha256:098172c424931edc2b5b4095eba1a883f524d4c61dc15158e3e9a0c5fb827c64",
     "README.md": "sha256:ea7a2ed05e1ce078a2dcc54d73d9b49a6e26bb6c9fb05aef276df65f764e6257",
     "SKILL.md": "sha256:e00a3264dd69c444716a63e9c4b0e66a7cfe137e0bef6cafaff300a96bae1428",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

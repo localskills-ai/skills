@@ -4,7 +4,7 @@
     "name": "companies-register-search",
     "version": "1.0.0"
   },
-  "auditedAt": "2026-05-21T01:46:32.418Z",
+  "auditedAt": "2026-05-21T02:00:53.847Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,7 +21,7 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:0067e4b59032347994e3931cc210051422a1fd20ccb44e56199b7110ca997669",
+    "skill.json": "sha256:c1f723d90c9746b67faaf43cc970366f75d078834f189df69ec919088dea47d4",
     "README.md": "sha256:0259b62a0dca20f721e0e7551c74f25beb653868e1ab13dbbdc5d26a8c9e525d",
     "SKILL.md": "sha256:60dc53421d6ae6392c4a6dc83f7a779cd0ffe30a8057a2efec08ff8ccd9fa809",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",

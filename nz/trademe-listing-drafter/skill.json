@@ -41,5 +41,6 @@
     "currency": "USD"
   },
   "safetyLevel": "low",
+  "executionModel": "draft-only",
   "verified": false
 }
