@@ -61,7 +61,8 @@ What to do next
 1. Sign in to the Companies Office: https://www.companiesoffice.govt.nz/
 2. Companies → Acme Consulting Ltd → File annual return.
 3. Confirm each field above.
-4. Submit. The return must be filed by the last day of May.
+4. Submit and pay the $49.74 + GST filing fee. The return must
+   be filed by the last day of May.
 5. Keep a copy of the filed return and the signed resolution with
    your company records.
 ```

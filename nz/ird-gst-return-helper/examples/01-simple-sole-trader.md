@@ -18,12 +18,17 @@ IRD #: 123-456-789
 Period: 2026-04-01 → 2026-05-31  (2 months)
 Basis: invoice
 
-Box 5  — Total sales and income (GST-inclusive):    $23,000.00
-Box 6  — GST included in Box 5 (× 3/23):            $ 3,000.00
-Box 8  — Zero-rated supplies (subset of Box 5):     $     0.00
-Box 11 — Total purchases (GST-inclusive):           $ 4,200.00
-Box 12 — GST on purchases (× 3/23):                 $   547.83
-Box 13 — GST to pay:                                $ 2,452.17
+Box 5  — Total sales and income (GST-inclusive):     $23,000.00
+Box 6  — Zero-rated supplies included in Box 5:      $     0.00
+Box 7  — Box 5 minus Box 6:                          $23,000.00
+Box 8  — GST on sales (Box 7 × 3/23):                $ 3,000.00
+Box 9  — Adjustments to GST on sales:                $     0.00
+Box 10 — Total GST on sales (Box 8 + Box 9):         $ 3,000.00
+Box 11 — Total purchases and expenses (GST-inc):     $ 4,200.00
+Box 12 — GST on purchases (Box 11 × 3/23):           $   547.83
+Box 13 — Credit adjustments:                         $     0.00
+Box 14 — Total GST credit (Box 12 + Box 13):         $   547.83
+Box 15 — Net GST payable (Box 10 − Box 14):          $ 2,452.17
 
 Working:
   Standard sales:       $23,000.00
@@ -45,8 +50,9 @@ What to do next
 2. Returns and transactions → GST → File return → period 2026-04-01 → 2026-05-31
 3. Enter:
    Box 5:  23000.00
-   Box 8:       0.00
+   Box 6:      0.00
    Box 11:  4200.00
+   (Boxes 7, 8, 10, 14, 15 calculate automatically in myIR.)
 4. Resolve the AWS line before submitting.
 5. Pay $2,452.17 by 28 June 2026.
 ```

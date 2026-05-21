@@ -1,6 +1,6 @@
 # Companies Office Annual Return
 
-Prepares your NZ Companies Office annual return. Free, mandatory, due in a specific month each year, and a real headache to forget — directors can be personally fined for late filing. The skill produces a checklist of what to confirm, what to update, and what to do before you press submit on the [Companies Office](https://www.companiesoffice.govt.nz/) site.
+Prepares your NZ Companies Office annual return. Mandatory, due in a specific month each year, and a real headache to forget — directors can be personally fined for late filing. The annual return has a filing fee of **$49.74 + GST**. The skill produces a checklist of what to confirm, what to update, and what to do before you press submit on the [Companies Office](https://www.companiesoffice.govt.nz/) site.
 
 ## What it does
 
@@ -14,7 +14,7 @@ Every NZ company files an annual return once a year. It is **not** a tax return 
 - AML status (yes/no — for reporting entities under the AML/CFT Act).
 - Confirmation that the company has prepared (or, for very small companies, isn't required to prepare) financial statements.
 
-The annual return month is set when you incorporate — it doesn't shift. You can file the return any time within that month, with no fee.
+The annual return month is set when you incorporate — it doesn't shift. You can file the return any time within that month. Filing fee is $49.74 + GST.
 
 ## Why this matters
 

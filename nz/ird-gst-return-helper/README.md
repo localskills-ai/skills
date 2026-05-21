@@ -53,12 +53,17 @@ Filing basis: invoice
 GST registered name: Paul Grey
 IRD number: 123-456-789
 
-Box 5  — Total sales and income (GST-inclusive):   $34,500.00
-Box 6  — GST included in sales (Box 5 × 3/23):     $ 4,500.00
-Box 8  — Zero-rated supplies:                       $ 2,000.00
+Box 5  — Total sales and income (GST-inclusive):    $36,500.00
+Box 6  — Zero-rated supplies included in Box 5:     $ 2,000.00
+Box 7  — Box 5 minus Box 6:                         $34,500.00
+Box 8  — GST on sales (Box 7 × 3/23):               $ 4,500.00
+Box 9  — Adjustments to GST on sales:               $     0.00
+Box 10 — Total GST on sales (Box 8 + Box 9):        $ 4,500.00
 Box 11 — Total purchases (GST-inclusive):           $12,650.00
 Box 12 — GST on purchases (Box 11 × 3/23):          $ 1,650.00
-Box 13 — GST to pay (Box 6 − Box 12):               $ 2,850.00
+Box 13 — Credit adjustments:                        $     0.00
+Box 14 — Total GST credit (Box 12 + Box 13):        $ 1,650.00
+Box 15 — Net GST payable (Box 10 − Box 14):         $ 2,850.00
 
 Flagged for your review (could not auto-classify):
 - $1,250 payment to "JBHF*EFTPOS-XX" on 2026-04-12 — unclear if business spend

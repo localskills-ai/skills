@@ -74,15 +74,18 @@ What to do next
 
 ## Concession quick reference
 
-| Concession | Discount | How to register |
-|------------|----------|-----------------|
-| Adult | None (baseline) | Default on new cards |
-| Tertiary | 25% off Adult | Apply via [AT website](https://at.govt.nz/bus-train-ferry/fares-discounts/concessions/) with student ID |
-| Child (5–15) | ~40% off Adult | Apply with proof of age |
-| SuperGold (65+) | Free off-peak (9am–3pm weekdays + all weekend); Adult fare on-peak | Register SuperGold to AT HOP |
-| Community Services Card | 50% off Adult on weekdays after 9am, all weekend | Apply via AT form with CSC |
+| Concession | Discount | When | How to register |
+|------------|----------|------|-----------------|
+| Adult | None (baseline) | Always | Default on new HOP cards |
+| Child (5–15) | 40% off Adult; free weekends + public holidays | Always | Apply with proof of age |
+| Secondary (16–19) | 40% off Adult | Always | Apply via [AT website](https://at.govt.nz/bus-train-ferry/fares-discounts/concessions/) with school confirmation |
+| Tertiary | 40% off Adult (raised from 25% in late 2025) | Always | Apply via AT website with student ID |
+| SuperGold (65+) | Free | After 9am weekdays + all day weekends/public holidays | Register SuperGold to AT HOP |
+| SuperGold (65+) | Adult fare | Before 9am weekdays | (i.e. peak fare applies) |
+| Community Services Card (Community Connect) | 50% off Adult | Always | Apply via AT Community Connect form |
+| Total Mobility / Free Travel Passes | Separate scheme | Separate eligibility | Separate forms |
 
-The actual fare amounts and times move — the skill quotes AT's site, not invented numbers.
+The exact dollar fares move; concession **percentages and time restrictions** are stable. If the user asks for a current fare, point them at AT's fare zone map.
 
 ## Tone
 

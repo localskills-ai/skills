@@ -325,8 +325,18 @@ const MALICIOUS_CODE_PATTERNS = [
 
 function scanForMaliciousCode(text, sourceLabel, issues) {
   if (!text) return;
+  // For markdown files, only scan inside fenced code blocks — that's where
+  // executable code lives. Patterns in prose / markdown links are typically
+  // false positives (e.g. "../../" in a relative doc link).
+  const isMarkdown = sourceLabel.toLowerCase().endsWith(".md");
+  let searchSpace = text;
+  if (isMarkdown) {
+    const blocks = text.match(/```[\s\S]*?```/g) ?? [];
+    if (blocks.length === 0) return;
+    searchSpace = blocks.join("\n");
+  }
   for (const { name, re } of MALICIOUS_CODE_PATTERNS) {
-    if (re.test(text)) {
+    if (re.test(searchSpace)) {
       issues.error(
         "malicious-code",
         `${sourceLabel}: matched pattern "${name}"`
@@ -444,7 +454,14 @@ async function findAllSkills(root) {
       return;
     }
     for (const ent of entries) {
-      if (ent.name.startsWith(".") || ent.name === "node_modules" || ent.name === "scripts")
+      // Skip dotfiles, node_modules/, scripts/, and any folder prefixed with
+      // an underscore (convention: _examples/, _drafts/ — not published).
+      if (
+        ent.name.startsWith(".") ||
+        ent.name.startsWith("_") ||
+        ent.name === "node_modules" ||
+        ent.name === "scripts"
+      )
         continue;
       const child = path.join(dir, ent.name);
       if (!ent.isDirectory()) continue;

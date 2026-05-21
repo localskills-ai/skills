@@ -123,14 +123,15 @@ remaining balance and concession registration to the new card.
 
 ## Concession quick reference
 
-(Do not quote dollar amounts — these change.)
+(Do not quote dollar amounts — these change. Percentages and time restrictions below are stable.)
 
-- **Adult** — default, no discount.
-- **Tertiary** — ~25% off Adult; requires current tertiary student ID, register via AT website.
-- **Child (5–15)** — substantial discount; register with proof of age.
-- **SuperGold (65+)** — free off-peak weekdays + all weekend; Adult fare on-peak; register SuperGold to HOP.
-- **Community Services Card** — 50% off Adult on weekdays after 9am and all weekend; register via AT form.
-- **Total Mobility / Free Travel Passes** — separate forms.
+- **Adult** — default baseline, no discount.
+- **Child (5–15)** — 40% off Adult any time; free travel on weekends and public holidays.
+- **Secondary (16–19)** — 40% off Adult.
+- **Tertiary** — 40% off Adult (rate was raised from 25% in late 2025 to align with Child/Secondary). Requires current tertiary student ID; register via AT website.
+- **SuperGold (65+)** — free travel after 9am on weekdays; free all day weekends and public holidays; Adult fare before 9am. No 3pm cap. Register SuperGold to AT HOP.
+- **Community Services Card (Community Connect)** — 50% off Adult at any time of day or week when paying with a registered AT HOP card. No time-of-day restriction. Apply via AT website.
+- **Total Mobility / Free Travel Passes** — separate forms, separate eligibility.
 
 ## Tone
 

@@ -57,17 +57,21 @@ If a transaction lacks a GST tax invoice (and is over $200 incl. GST), the input
 
 ## How to compute the boxes
 
-Using NZ's current 15% rate:
+Using NZ's current 15% rate. Show your working in the summary so the user can spot-check.
 
-- **Box 5** — Total sales and income (GST-inclusive). Sum of standard-rated + zero-rated sales, GST-inclusive.
-- **Box 6** — GST included in Box 5. Box 5 × 3 ÷ 23 (gives you the 15/115 fraction).
-- **Box 8** — Zero-rated supplies (subset of Box 5).
-- **Box 9** — Adjustments to Box 6 (rarely used at the SME level; ask the user if they have any).
-- **Box 11** — Total purchases (GST-inclusive). Sum of standard-rated purchases, GST-inclusive.
-- **Box 12** — GST on purchases. Box 11 × 3 ÷ 23.
-- **Box 13** — GST payable or refund: Box 6 + Box 9 − Box 12 − Box 14. Negative = refund.
+GST extraction fraction: GST-inclusive amount × 3 ÷ 23 = GST portion. (That's just 15/115 = 3/23.)
 
-Show your working in the summary so the user can spot-check.
+- **Box 5** — Total sales and income for the period (GST-inclusive). Includes standard-rated AND zero-rated supplies.
+- **Box 6** — Zero-rated supplies included in Box 5.
+- **Box 7** — Box 5 minus Box 6 (i.e. standard-rated supplies, GST-inclusive).
+- **Box 8** — GST on sales: Box 7 × 3 ÷ 23.
+- **Box 9** — Adjustments to GST on sales (rare at SME level; ask the user if they have any — e.g. bad-debt deductions under s 26 of the GST Act).
+- **Box 10** — Total GST collected on sales: Box 8 + Box 9.
+- **Box 11** — Total purchases and expenses (GST-inclusive).
+- **Box 12** — GST on purchases: Box 11 × 3 ÷ 23.
+- **Box 13** — Credit adjustments from your calculation sheet (rare).
+- **Box 14** — Total GST credit for purchases: Box 12 + Box 13.
+- **Box 15** — Net GST payable (or refund if negative): Box 10 − Box 14.
 
 ## Output format
 
@@ -80,11 +84,16 @@ Period: <YYYY-MM-DD> → <YYYY-MM-DD>  (<N> months)
 Basis: <invoice|payments|hybrid>
 
 Box 5  — Total sales and income (GST-inclusive):    $<X>
-Box 6  — GST included in Box 5 (× 3/23):            $<X>
-Box 8  — Zero-rated supplies (subset of Box 5):     $<X>
-Box 11 — Total purchases (GST-inclusive):           $<X>
-Box 12 — GST on purchases (× 3/23):                 $<X>
-Box 13 — GST to pay (or refund if negative):        $<X>
+Box 6  — Zero-rated supplies included in Box 5:     $<X>
+Box 7  — Box 5 minus Box 6 (standard-rated, GST-inc): $<X>
+Box 8  — GST on sales (Box 7 × 3/23):               $<X>
+Box 9  — Adjustments to GST on sales:               $<X>
+Box 10 — Total GST on sales (Box 8 + Box 9):        $<X>
+Box 11 — Total purchases and expenses (GST-inclusive): $<X>
+Box 12 — GST on purchases (Box 11 × 3/23):          $<X>
+Box 13 — Credit adjustments:                        $<X>
+Box 14 — Total GST credit (Box 12 + Box 13):        $<X>
+Box 15 — Net GST payable (Box 10 − Box 14):         $<X>
 
 Working (per-classification totals):
   Standard sales:       $<X>
@@ -107,7 +116,7 @@ What to do next
 2. Returns and transactions → GST → File return → period <YYYY-MM-DD>
 3. Enter the box values above.
 4. Resolve flagged items before submitting.
-5. Submit and pay (if Box 13 is positive) before the due date —
+5. Submit and pay (if Box 15 is positive) before the due date —
    usually the 28th of the month after the period ends, except
    the November period (due 15 January) and the March period
    (due 7 May).
@@ -138,7 +147,7 @@ Precise, neutral, factual. NZ English. No jargon-free finance-bro tone, no paddi
 1. Did I include only transactions within the stated GST period?
 2. Did I apply the right basis (invoice vs payments)?
 3. Are all flagged items genuinely uncertain (not just "I didn't try")?
-4. Does Box 13 = Box 6 + Box 9 − Box 12 − Box 14? Show the arithmetic.
+4. Does Box 15 = Box 10 − Box 14, where Box 10 = Box 8 + Box 9 and Box 14 = Box 12 + Box 13? Show the arithmetic.
 5. Have I avoided giving tax advice?
 
 If any answer is "no", fix it before outputting.

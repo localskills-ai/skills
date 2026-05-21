@@ -21,19 +21,20 @@ If anything's unclear, ask **one** question. Don't fish.
 
 ## Pre-flight checklist format
 
-Identify which **separate filings** the user must do BEFORE pressing submit on the annual return. Common ones:
+Identify which **separate updates** the user must do BEFORE pressing submit on the annual return. Each is done online via the Companies Register dashboard (RealMe login + authority required for the company). Most updates are free; the annual return itself has a filing fee of **$49.74 + GST**.
 
-| Change | What to file first | Companies Office form |
-|--------|-------------------|------------------------|
-| Director appointed / resigned | Notice of Director Change | DI-1 |
-| Director's residential address changed | Notice of Change of Director's Particulars | DI-3 |
-| Shareholder added / removed / shareholding changed | Notice of Change of Shareholders | SH-1 |
-| Registered office moved | Notice of Change of Registered Office | RO-1 |
-| Address for service moved | Notice of Change of Address for Service | RO-1 |
-| Ultimate holding company changed | Notice of UHC Change | UHC-1 |
-| Constitution adopted/changed | Notice of Constitution / Amendment | CL-1 |
+| Change | Where to do it before filing the annual return |
+|--------|------------------------------------------------|
+| Director appointed | Companies Register dashboard → Maintain directors → Add a director. New director must complete the Consent and Certificate of Director form. |
+| Director resigned | Companies Register dashboard → Maintain directors → Remove a director. |
+| Director's residential address changed | Companies Register dashboard → Update director details. |
+| Shareholder added / removed / shareholding changed | Companies Register dashboard → Update shareholding (new shareholders complete consent). |
+| Registered office moved | Companies Register dashboard → Update registered office. |
+| Address for service moved | Companies Register dashboard → Update address for service. |
+| Ultimate holding company changed | Companies Register dashboard → Update ultimate holding company. |
+| Constitution adopted / changed | Companies Register dashboard → Lodge constitution. |
 
-The user should make these changes online with the Companies Office (they're free) BEFORE filing the annual return, so the return reflects the current state of the register.
+The user makes these online updates BEFORE filing the annual return, so the return reflects the current state of the register. The Companies Office does not use form codes like "DI-1" or "SH-1" — actions are performed directly through the register dashboard.
 
 ## Draft confirmation answers format
 
@@ -63,23 +64,29 @@ Tick boxes the form asks you to confirm:
 Many small NZ companies don't hold an AGM — they pass a written shareholders' resolution under s 122 of the Companies Act 1993. Default to this for single-shareholder / family companies unless the user states they hold an AGM.
 
 ```
-Shareholders' Resolution in lieu of AGM
+Shareholders' Resolution in Lieu of AGM
 ---------------------------------------
 <COMPANY NAME> (NZBN <NUMBER>)
 Date: <YYYY-MM-DD>
 
 The undersigned, being all the shareholders entitled to vote, resolve
-as follows:
+as follows under section 122 of the Companies Act 1993:
 
 1. The financial statements for the year ended <BALANCE DATE> have
    been prepared / are not required to be prepared in accordance
-   with the Companies Act 1993.
+   with the Companies Act 1993 and applicable financial reporting
+   standards.
 
 2. <NAME> is reappointed / continues as director.
 
-3. The company will not appoint an auditor for the coming year
-   under s 207I of the Companies Act 1993 (small-company exemption,
-   if applicable).
+3. The company is not required to appoint an auditor for the
+   coming year. (Small private companies with fewer than 10
+   shareholders that are not "large", FMC reporting entities, or
+   public entities are not required to have their financial
+   statements audited. Section 207I/207J of the Companies Act 1993
+   apply only to companies with 10 or more shareholders, or large
+   companies, that wish to opt out of audit requirements — they do
+   not apply to typical small family companies.)
 
 Signed by all shareholders:
   ________________________     ________________________
@@ -90,7 +97,7 @@ For full AGM minutes, switch to a formal-meeting template — ask the user if th
 
 ## What to refuse
 
-- "Don't list <director> on the return — they're not really involved any more." Refuse. If the person is a director on the register, they're listed; if they shouldn't be, file a DI-1 to remove them first.
+- "Don't list <director> on the register — they're not really involved any more." Refuse. If the person is a director on the register, they're listed; if they shouldn't be, remove them via the Companies Register dashboard first.
 - "Just file it as it was last year." Refuse if you know things have changed.
 - "I forgot — can I file last year's return now?" The return is for a specific year; the user files it for the current year, but you can flag that the prior period was missed and recommend they ask the Companies Office about it (or talk to an accountant about reinstatement procedure if a removal notice has been issued).
 - "I haven't done my financial statements." If statements are required, you can't manufacture them — point user to an accountant.

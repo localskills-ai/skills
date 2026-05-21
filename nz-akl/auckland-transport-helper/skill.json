@@ -1,7 +1,7 @@
 {
   "name": "auckland-transport-helper",
   "displayName": "Auckland Transport Helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helps with AT HOP card, journey planning, fare disputes, and the AT Mobile / website friction points.",
   "longDescription": "Handles the messy bits of Auckland public transport — drafting AT HOP balance / refund / fare-dispute messages, decoding an AT Mobile journey plan that doesn't make sense, working out the right concession for your age / status, and helping with lost-card replacement. Also drafts complaints when an AT or NX1/NX2 bus doesn't show. Not authoritative on fares — directs to AT's site for current pricing.",
   "creator": {

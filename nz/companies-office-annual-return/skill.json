@@ -1,7 +1,7 @@
 {
   "name": "companies-office-annual-return",
   "displayName": "Companies Office Annual Return",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prepares your NZ Companies Office annual return — drafts the confirmation fields and flags anything that needs updating before you file.",
   "longDescription": "Every NZ company must file an annual return at the Companies Office once a year (free; the month is fixed at incorporation). This skill walks through the confirmation fields — registered address, directors, shareholders, ultimate holding company, AML status — using your prior return or last AGM minutes as the starting point. It produces a checklist of what's the same, what's changed, and what you should update on the Companies Office site before pressing submit. Does not file. Does not log into the Companies Office.",
   "creator": {

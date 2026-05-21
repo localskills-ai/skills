@@ -1,0 +1,29 @@
+{
+  "name": "example-skill",
+  "displayName": "Example Skill (template)",
+  "version": "0.1.0",
+  "description": "Reference template showing the minimum viable structure for a Localskills submission.",
+  "creator": {
+    "username": "localskills",
+    "displayName": "Localskills",
+    "url": "https://localskills.ai"
+  },
+  "license": "MIT",
+  "regions": ["global"],
+  "categories": ["utilities"],
+  "tags": ["template", "example", "scaffold"],
+  "compatibility": {
+    "claude-code": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": [],
+    "network": [],
+    "shell": false
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0,
+    "currency": "USD"
+  },
+  "safetyLevel": "low"
+}

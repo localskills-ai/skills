@@ -5,24 +5,25 @@
 
 ## Output
 ```
-Pre-flight checklist — file these FIRST, before the annual return
------------------------------------------------------------------
-1. Notice of Director Change (DI-1) — appoint Jane Smith,
-   effective 2026-02-15. Need her consent to act as director
-   (free template on Companies Office site).
+Pre-flight checklist — update these FIRST, before the annual return
+-------------------------------------------------------------------
+1. Companies Register dashboard → Maintain directors → Add a
+   director. Appoint Jane Smith, effective 2026-02-15. She needs
+   to complete the Consent and Certificate of Director (free).
 
-2. Notice of Change of Shareholders (SH-1) — record the transfer
-   of 25% of shares to Jane Smith. Date of transfer matches the
-   appointment date.
+2. Companies Register dashboard → Update shareholding. Record the
+   transfer of 25% of shares to Jane Smith. Date of transfer
+   matches the appointment date.
 
-3. Notice of Change of Registered Office (RO-1) — update from
-   Wellington home address to CBD office address. Effective date
-   of move. Same form covers address-for-service if it's also
-   moving.
+3. Companies Register dashboard → Update registered office. Update
+   from Wellington home address to CBD office address. Effective
+   date of move. The same flow covers address-for-service if it's
+   also moving.
 
-All three are free filings on the Companies Office site. Lodge
-them BEFORE you open the annual return — the return will pull
-the current register state.
+All three are free online actions on the Companies Register
+dashboard. Lodge them BEFORE you open the annual return — the
+return will pull the current register state. The annual return
+itself has a filing fee of $49.74 + GST.
 ```
 
 ```
@@ -54,12 +55,12 @@ Tick boxes:
 ```
 What to do next
 ---------------
-1. Lodge the three pre-flight filings (DI-1, SH-1, RO-1) at
-   https://www.companiesoffice.govt.nz/
-2. Wait for them to process (usually same-day for online filings).
+1. Lodge the three pre-flight updates via the Companies Register
+   dashboard at https://www.companiesoffice.govt.nz/
+2. Wait for them to process (usually same-day for online actions).
 3. Open the annual return form for Beta Holdings Ltd.
 4. Confirm the now-updated fields above.
-5. Submit by the end of November.
+5. Submit by the end of November and pay the $49.74 + GST fee.
 6. Hold a shareholders' resolution / AGM minute recording the
    change in directorship and shareholding — required for
    internal company records under the Companies Act.
