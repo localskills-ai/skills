@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "skill-creator",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T02:18:03.873Z",
+  "auditedAt": "2026-05-21T02:43:44.620Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,10 +21,10 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:d646c32b726a353841b55bfa7c7251ca6940b013aad2b9125055e1abf2de9c2e",
-    "README.md": "sha256:185cf57e7a06777d6ca6a99e97c71fd78ca006ed7d7e9435d22cf33cbf6c3735",
-    "SKILL.md": "sha256:9cb97ef4322b9f6c29ba7d956cddc2d3d6dea2f3854b67491d3bef0282ab7b44",
+    "skill.json": "sha256:69ebf175353081ae53799f8ca6c644471d62fc8df4fa2b6e7f2b92cda3ab3ca0",
+    "README.md": "sha256:78909184e0ab617dc08144eda1650bdb7ce845a883ceb2bdc5eee478eccc405a",
+    "SKILL.md": "sha256:277026e2e09419e2717466e50ffe3a8b7d87841aff0505efc33468bb18568f18",
     "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:b849ac23c9185cdb05fad934c32903c43f74f911e4ca1023683d2f1e5491f31f"
+    "CHANGELOG.md": "sha256:538d36bf743962455a92b0d04121421e0f527cb0ce1d3dd689b9c1eb8143845e"
   }
 }

@@ -1,9 +1,9 @@
 {
   "name": "skill-creator",
   "displayName": "Skill Creator",
-  "version": "1.0.0",
-  "description": "Walks you through demonstrating a real task, then generates a complete Localskills.ai skill folder ready to submit.",
-  "longDescription": "The meta-skill. Install it into Claude Desktop (or any agent with Computer Use), then ask Claude to help you author a new Localskills skill. The skill makes you do the target task once with Claude watching, identifies the target interface (chatbot, web app, portal), extracts the operating rules and refusal cases from your demonstration, and outputs a complete skill folder: skill.json, SKILL.md, README.md, CHANGELOG.md, and at least two worked examples. Validates against the Localskills schema before handing it back.",
+  "version": "1.0.1",
+  "description": "Co-pilots a real task with you (Computer Use), then generates a complete Localskills.ai skill folder from the workflow it just ran.",
+  "longDescription": "The meta-skill. Install into Claude Desktop with Computer Use, open the target service on one side of your screen and Claude on the other, then pick a mode — dictation (you tell Claude each step, Claude executes) or autopilot (Claude attempts the task, you correct it). Either way, by the end Claude has actually performed the task once and writes the SKILL.md from first-hand knowledge, not abstract description. Identifies the target interface (chatbot, portal, app), extracts operating rules and refusal cases from the live run, and outputs a complete skill folder (skill.json, SKILL.md, README, CHANGELOG, 2+ examples) validated against the Localskills schema before handoff.",
   "creator": {
     "username": "localskills",
     "displayName": "Localskills",

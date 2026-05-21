@@ -1,61 +1,70 @@
-# Example 1 — Authoring with Computer Use (Claude Desktop)
+# Example 1 — Supervised execution with Computer Use (dictation mode)
 
 ## Setup
 
-User has installed Skill Creator into Claude Desktop, which has Computer Use enabled. They want to build a skill for filing their council rates query with Wellington City Council.
+User has installed Skill Creator into Claude Desktop, which has Computer Use enabled. They have a two-pane screen setup: the Wellington City Council rates portal on the right, Claude on the left. They want to build a skill for disputing their rates bill.
 
 ## Conversation (abridged)
 
-> **User:** I want to build a skill that helps me query my rates bill with WCC.
+> **User:** I want to build a skill that helps me dispute my rates with Wellington City Council.
 >
-> **Claude (via Skill Creator):** Good. One task per skill — by "query" do you mean: (a) check what's owed, (b) request a payment plan, (c) dispute a rate, or (d) something else?
+> **Claude (via Skill Creator):** Good. One task per skill — by "dispute" do you mean (a) request a revaluation, (b) request a write-off, (c) request a payment plan, or (d) something else?
 >
-> **User:** (c) dispute a rate.
+> **User:** (a) request a revaluation.
 >
 > **Claude:** Phase 1 scope:
->   - Region: nz (or nz-wgn for Wellington-specific?)
+>   - Region: nz-wgn (Wellington-specific)
 >   - Categories: government, property
->   - Target interface: council web portal — let's confirm in Phase 2.
->   - Slug suggestion: `wellington-rates-dispute`. OK?
+>   - Target interface: WCC web portal
+>   - Slug: `wellington-rates-revaluation-request`. OK?
 >
-> **User:** Yes, nz-wgn, slug looks good.
+> **User:** Yes.
 >
-> **Claude:** Phase 2. I'm going to watch you do the task once. Don't ask for my help — just do it. Talk out loud at decision points. I'll ask clarifying questions at the end.
+> **Claude:** Phase 2. I see you have wellington.govt.nz open on the right. Pick a mode:
+>   - **Dictation:** you tell me each step, I'll execute via Computer Use.
+>   - **Autopilot:** you give me the goal, I attempt the task, you correct me when I go wrong.
 >
-> *(User navigates to wellington.govt.nz → rates → online services → dispute a rate. Fills out the form. Talks out loud at three decision points: "I'm using my property valuation code because that's what they need to find me in their system"; "I'm uploading the QV report PDF because that's the source of my disagreement"; "I'm picking 'request a revaluation' rather than 'request a write-off' because I think the valuation is wrong, not the calculation".)*
+> **User:** Dictation. I know exactly what to do.
 >
-> **Claude:** Five clarifying questions:
->   1. The form had an optional "additional comments" field. You left it blank. Should the skill always leave it blank, or fill it when the user has specific extra context?
->   2. You uploaded the QV report. If the user doesn't have one, what's the next-best evidence?
->   3. You spent ~2 minutes finding your valuation code. Where's that on the rates bill?
->   4. The form asked for "preferred method of contact" — you picked email. Is that always right, or would phone make sense for some users?
->   5. After you submitted, the page said "we'll respond within 20 working days". If 20 working days passes with no response, what's the next step?
+> *(User dictates: "Click 'Online services'. Click 'Rates'. Click 'Request a revaluation'. Fill in the property valuation code — I'll dictate it: 12345678. Upload my QV report from ~/Downloads/qv-report.pdf. Pick 'request a revaluation' not 'request a write-off'. Pick 'email' as preferred contact method. Submit." Claude executes each step via Computer Use, taking screenshots between actions.)*
 >
-> *(User answers each, including the escalation path: follow up via the council's contact form referencing the original case number, then if still no resolution, take it to the Local Government Ombudsman.)*
+> *(After submission, the page shows "Reference number REV-2026-04578. Response within 20 working days.")*
 >
-> **Claude:** Phase 3 — drafting. I'll generate the folder now.
+> **Claude:** I noticed you specifically picked 'request a revaluation' over 'request a write-off'. Five clarifying questions:
+>   1. When should the skill pick 'write-off' instead?
+>   2. The QV report was the evidence here. If a user doesn't have one, what's next-best?
+>   3. The valuation code field was the slow part — where do users typically find it on their rates bill?
+>   4. You picked email contact. Always email, or are there cases for phone?
+>   5. If 20 working days passes with no response, what's the escalation path?
+>
+> *(User answers each, including the final escalation: follow up via the council contact form with the reference number, then if still no resolution, take it to the Local Government Ombudsman.)*
+>
+> **Claude:** Phase 3 — drafting. I'll generate the folder now using the workflow I just executed.
 
 ## What gets written to disk
 
 ```
-~/Documents/skill-creator-output/wellington-rates-dispute/
+~/Documents/skill-creator-output/wellington-rates-revaluation-request/
   skill.json            # nz-wgn region, government+property categories,
                         # executionModel: computer-use-recommended,
-                        # safetyLevel: medium (touches council records)
-  SKILL.md              # operating rules, WCC portal navigation,
-                        # inputs (property valuation code, QV report,
-                        # specific point of disagreement), refusal cases
-                        # (can't dispute someone else's rates, can't
-                        # bypass the formal process for "the council
-                        # is wrong" generally — has to be a specific
-                        # valuation or calculation challenge)
-  README.md             # WCC-rates-dispute scenario, specific cost
-                        # context (rates are typically $2-4k/yr in WGN
-                        # central), the 20-working-day timeline
+                        # safetyLevel: medium (touches council records).
+                        # permissions.fileSystem includes read:documents
+                        # because the task involves uploading a QV PDF.
+  SKILL.md              # operating rules, WCC portal navigation captured
+                        # from the actual execution (screenshots
+                        # referenced), inputs (valuation code, QV report
+                        # or equivalent), refusal cases (can't dispute
+                        # someone else's rates, can't bypass formal
+                        # process, must have specific valuation or
+                        # calculation challenge), edge cases (no QV
+                        # report, expired valuation period).
+  README.md             # WCC rates dispute scenario, ~$2-4k/yr rates
+                        # context for WGN central, 20-working-day SLA.
   LICENSE               # MIT
-  CHANGELOG.md          # 1.0.0 initial release
+  CHANGELOG.md          # 1.0.0 initial release; notes the skill was
+                        # authored via dictation-mode supervised execution.
   examples/
-    01-valuation-challenge.md
+    01-valuation-challenge.md      # the actual run we just did
     02-refusal-someone-elses-rates.md
 ```
 
@@ -63,9 +72,20 @@ User has installed Skill Creator into Claude Desktop, which has Computer Use ena
 
 Skill Creator runs the checklist. Everything passes. It hands back:
 
-> Your skill folder is at ~/Documents/skill-creator-output/wellington-rates-dispute/.
-> Five required files + 2 examples generated. Validation passed (no errors, no warnings).
+> Your skill folder is at ~/Documents/skill-creator-output/wellington-rates-revaluation-request/. Five required files + 2 examples generated. Validation passed (no errors, no warnings).
 >
-> To finish: clone the Localskills skills repo, copy the folder to skills/nz-wgn/wellington-rates-dispute/, run `node scripts/validate.mjs nz-wgn/wellington-rates-dispute`, then open a PR.
+> To finish: clone the Localskills skills repo, copy the folder to skills/nz-wgn/wellington-rates-revaluation-request/, run `node scripts/validate.mjs nz-wgn/wellington-rates-revaluation-request`, then open a PR.
 
 Total time: ~25 minutes from "I want to build a skill" to validated draft.
+
+## Notes — autopilot mode looks like this
+
+Same setup. User picks autopilot instead:
+
+> **Claude:** Goal: file a revaluation request with WCC. I see the site on your right. I'll attempt it now — correct me when I go wrong.
+> *(Claude clicks around, finds the rates section, opens the form, asks for the valuation code, uploads the file the user points to.)*
+> **User:** Wait — pick "revaluation" not "write-off". *(Claude switches.)*
+> **User:** That's the wrong dropdown for contact — use email, the second option. *(Claude corrects.)*
+> *(Continues until submission. Same drafting / validation phases follow.)*
+
+Both modes produce equivalent quality drafts because Claude executed the task and saw the actual UI in both cases. Pick whichever feels more natural.

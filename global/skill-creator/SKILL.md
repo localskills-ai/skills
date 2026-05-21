@@ -37,40 +37,53 @@ Ask the user, one question at a time:
 
 If at any point the user describes something that violates policy (auto-pay without confirmation, scraping a ToS-restricted service, impersonating someone), stop and explain why you can't help build this skill.
 
-## Phase 2 — Demonstration (10–15 minutes)
+## Phase 2 — Supervised execution (10–15 minutes)
 
 ### If the agent has Computer Use
 
-Tell the user:
+Two valid modes — both produce first-hand knowledge of the workflow because *you* execute it for real. Let the user pick.
 
-> I'm going to watch you do this task once. Don't ask for my help while you're doing it — just do it at your normal pace. Talk out loud when you make a decision with reasoning behind it. I'll ask 3–5 clarifying questions at the end.
+**Set-up (both modes):**
 
-Then observe via screenshots. Note:
+- The user opens the target service (website, app, portal) on one side of their screen.
+- The agent (you) runs on the other side, with Computer Use authorised.
+- The user can see both at once.
 
-- **Sequence of screens / steps.** What did they click first? Second?
-- **Decisions with reasoning.** "I picked 'Damaged on arrival' instead of 'Wrong item' because…" — this becomes a step in SKILL.md.
-- **Inputs the user brought.** Did they have a photo? An order number? A receipt PDF?
-- **The shape of the output.** What did they end up with at the end? A drafted message? A refund confirmation? A submitted form?
-- **Refusal moments.** "I wouldn't use this for X because…" — this becomes a refusal case.
-- **Anything that went wrong + how they recovered.** Edge cases.
+**Mode A — user drives, agent executes ("dictation mode")**
 
-After the user finishes, ask up to 5 clarifying questions. Examples:
+- The user says what to do, in plain language: "Open the Woolworths app", "Click the chat icon", "Tell Olive I want to query order WW1234567".
+- You execute each step via Computer Use — click, type, scroll, screenshot.
+- The user explains the reasoning when it's not obvious: "I'm having you cite section 6 of the CGA because Olive's escalation logic recognises statute references."
+- Best when the workflow has non-obvious decision points the user wants to teach explicitly.
 
-- "When the page asked for confirmation, you clicked 'Confirm' without reading. Is that always safe to do here, or is there a case where the agent should pause and ask the user?"
-- "You skipped the optional 'description' field. Should the skill always skip it, or fill it when there's specific info?"
-- "If the chat had asked for a photo and you didn't have one, what would you do?"
+**Mode B — agent attempts, user corrects ("autopilot mode")**
+
+- The user tells you the goal: "Get a refund for the spoiled strawberries in my last Woolworths order."
+- You attempt the task autonomously using Computer Use — figure out which app to open, how to navigate, what to type.
+- The user watches and corrects when you go wrong: "No, don't click that link, use the chat icon instead", "That's the wrong order — use the most recent one".
+- Best when the user wants to see what the agent would do unsupervised, and refine from there.
+
+Either way, by the end you've actually completed the task. The SKILL.md you draft is grounded in real screenshots and real clicks, not a description. Note which mode you used in the CHANGELOG note — it affects whether the skill should default to autopilot or dictation when invoked later.
+
+After the task completes, ask up to 5 clarifying questions to capture the things that didn't come up naturally:
+
+- "When you told me to pick 'Damaged on arrival' instead of 'Wrong item', was that universal or scenario-specific? When would it be different?"
+- "You skipped the optional 'description' field. Should the skill always skip it, or fill it when the user has specific extra context?"
+- "If the chat had asked for a photo and the user didn't have one, what should the skill do?"
+- "What's one situation where a user might bring you a request that *looks* like this task but isn't — and you should refuse?"
+- "What did *not* happen this time that the skill needs to handle when it does?"
 
 ### If the agent does NOT have Computer Use
 
 Run a structured interview instead. Ask:
 
 1. What are the inputs the user typically has?
-2. Walk me through the steps from start to finish.
+2. Walk me through the steps from start to finish — what would you click, in what order?
 3. What does the final output look like? (Paste an example if you have one.)
 4. What's at least one refusal case — something a user might ask that the skill should refuse?
 5. What's one edge case that looks like the main case but isn't?
 
-This produces a thinner draft. Tell the user: "A Computer Use demonstration would catch things this interview misses. Consider re-running with Computer Use enabled if you find the draft is missing detail."
+This produces a thinner draft. Tell the user: "Computer Use supervised-execution would catch things this interview misses, because I'd be doing the task with you watching. Consider re-running with Computer Use enabled if you find the draft is missing detail."
 
 ## Phase 3 — Drafting
 

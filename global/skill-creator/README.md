@@ -1,10 +1,10 @@
 # Skill Creator
 
-The meta-skill. Hand this to Claude Desktop (or any agent with Computer Use), then ask it to help you build a new Localskills.ai skill. The skill walks you through demonstrating the task once, watches what you do, then drafts the entire skill folder.
+The meta-skill. Hand this to Claude Desktop (or any agent with Computer Use), then ask it to help you build a new Localskills.ai skill. You and Claude do the target task together once — either you dictate the steps and Claude executes them, or Claude attempts the task autonomously and you correct it as it goes — and Claude drafts the entire skill folder from the workflow it just ran first-hand.
 
 ## Why this exists
 
-The fastest path from "I have a regional task I do all the time" to "I have a published Localskills skill" is **Path A** in the [Create a Skill guide](https://localskills.ai/docs/create-a-skill): demonstrate the task once with Claude watching via Computer Use, then have Claude draft the SKILL.md from the observed workflow.
+The fastest path from "I have a regional task I do all the time" to "I have a published Localskills skill" is **supervised execution with Computer Use**: do the task once with Claude as your co-pilot — open the target service on one side of your screen, Claude on the other — and have Claude produce the SKILL.md from the workflow it just ran for real.
 
 This skill packages that path. You install it, ask Claude to help, and follow the prompts. ~30 minutes from task to first-draft skill folder, validated and ready to PR.
 
@@ -28,8 +28,8 @@ The output is validated against the Localskills schema before being handed back.
 
 ## What you need
 
-- **Claude Desktop with Computer Use enabled** (recommended) — Claude can watch you do the task.
-- **OR any agent that can run Localskills skills** — Skill Creator can still help, but it works from your description rather than direct observation.
+- **Claude Desktop with Computer Use enabled** (recommended) — Claude can drive the target service while you supervise. Two-pane setup works well: target service on one side, Claude on the other.
+- **OR any agent that can run Localskills skills** — Skill Creator can still help via a structured interview, but the resulting SKILL.md is thinner because Claude hasn't actually done the task.
 - **A specific task you want to automate.** Not "help with my taxes" — "file my IRD GST return" or "look up a NZ company on the Companies Register".
 - **About 30 minutes.**
 
@@ -44,17 +44,18 @@ The skill asks:
 - Which category fits — finance, retail, government, transport, property, health, legal, business, lifestyle, developer, agents, or utilities?
 - What's the target interface — a chatbot, a web portal, a desktop app, an email flow? *(Skill Creator uses this to set the right tone — "Olive playbook" vs "myIR navigation" vs "form draft".)*
 
-### Phase 2 — Demonstration
+### Phase 2 — Supervised execution
 
-If you have Computer Use:
+If you have Computer Use, pick one of two modes:
 
-- The skill tells you: "Now do the task once at your normal pace. I'll watch. Don't ask for my help. When you do something that has reasoning behind it, talk out loud — I'll catch it."
-- You navigate to the target service and complete the task.
-- Claude observes, takes screenshots, and asks ~3–5 clarifying questions ("Why did you pick this dropdown option?", "What would you have done differently if X had been true?").
+- **Dictation mode** — You tell Claude what to do, step by step: "Open the Woolworths app", "Click the chat icon", "Tell Olive my order number is WW1234567". Claude executes each step via Computer Use. You correct it when it goes wrong; you explain the reasoning when it's not obvious. Best when the workflow has non-obvious decision points you want to teach explicitly.
+- **Autopilot mode** — You tell Claude the goal ("Get a refund for the spoiled strawberries"). Claude attempts the task autonomously: figures out which app to open, how to navigate, what to type. You watch and correct: "No, don't click that — use the chat icon instead". Best when you want to see what Claude would do unsupervised, and refine from there.
+
+Either way, by the end Claude has actually completed the task and can draft the SKILL.md from first-hand knowledge, not abstract description. After the task ends, Claude asks ~3–5 clarifying questions to capture anything that didn't come up naturally during execution.
 
 If you don't have Computer Use:
 
-- The skill walks you through a structured interview instead: target steps, inputs, outputs, refusal cases, edge cases.
+- The skill walks you through a structured interview instead: target steps, inputs, outputs, refusal cases, edge cases. Thinner draft; rerun with Computer Use enabled if the result is missing detail.
 
 ### Phase 3 — Drafting
 

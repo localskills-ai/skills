@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1] — 2026-05-21
+
+### Changed
+
+- **Corrected the Computer Use framing.** Computer Use is not a passive screen-recorder — Claude can't sit and watch the user work. Phase 2 rewritten around supervised execution: either **dictation mode** (user tells Claude each step, Claude executes via Computer Use) or **autopilot mode** (Claude attempts the task, user corrects). Both produce real-experience SKILL.md because Claude actually performs the task. Structured interview remains the fallback for agents without Computer Use.
+- README, examples, and description updated to match.
+- `description` rewritten to lead with "co-pilots a real task with you".
+
 ## [1.0.0] — 2026-05-21
 
 ### Added
