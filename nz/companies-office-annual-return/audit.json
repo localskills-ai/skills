@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "companies-office-annual-return",
+    "version": "1.0.1"
+  },
+  "auditedAt": "2026-05-21T01:26:46.809Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.2.0"
+  },
+  "result": "pass",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network"
+  ],
+  "errors": [],
+  "warnings": [],
+  "hashes": {
+    "skill.json": "sha256:a95155042d827f23b7deec46938cf9802e52ebe45f0251c9a6cc84b6ba323fec",
+    "README.md": "sha256:603973a9ff96ec56fb86855435e3b9b287c665e02beab0a546c20116a2a8226c",
+    "SKILL.md": "sha256:780f8552588ec05e96da251e93bb08392658300ff6dab7b703d07d5b958ec352",
+    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
+    "CHANGELOG.md": "sha256:6bc54417562954657c38430188d9feb0f28e4ea7e77dc22b434ddfa438d47f4d"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "resource-consent-checker",
+    "version": "1.0.0"
+  },
+  "auditedAt": "2026-05-21T01:26:46.824Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.2.0"
+  },
+  "result": "pass",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network"
+  ],
+  "errors": [],
+  "warnings": [],
+  "hashes": {
+    "skill.json": "sha256:2f5d94673cc40d5474e11e61200dc7a337c2d4778a3279dae780414c1f422900",
+    "README.md": "sha256:10e6fbf4595690feea9192bff58361fd82b69c50186f530f841d20690edb83a1",
+    "SKILL.md": "sha256:743b87080e38da2c9446af30bdd71b92aebf6af0abef0fe39e57fa07f470d2d5",
+    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
+    "CHANGELOG.md": "sha256:788266ba6df65b746556ae0f38114d62ac7665d442b7ee714b6e2f56aeff2b19"
+  }
+}

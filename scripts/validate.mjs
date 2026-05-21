@@ -10,12 +10,14 @@
 //
 // Exit code 0 if all skills pass; 1 if any skill has errors.
 
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir, stat, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..");
+const VALIDATOR_VERSION = "0.2.0";
 
 // ---------------------------------------------------------------------------
 // Schema (kept aligned with /site/src/lib/skill-schema.ts).
@@ -428,7 +430,79 @@ async function validateSkill(skillDir) {
     scanUndeclaredNetwork(text, manifest.permissions?.network, label, issues);
   }
 
+  // 5. Compute SHA256 of each tracked file in the skill directory.
+  //    Used both for tamper-detection and as a key for cache invalidation.
+  issues.hashes = await hashTrackedFiles(skillDir);
+
+  // 6. Snyk Agent Scan hook (deferred). When SNYK_TOKEN is set in env, this
+  //    is where we'd shell out to `snyk-agent-scan` and merge its findings.
+  //    Not wired yet — see README in skills repo for the install path.
+
   return issues;
+}
+
+const HASHED_FILES = [
+  "skill.json",
+  "README.md",
+  "SKILL.md",
+  "LICENSE",
+  "CHANGELOG.md",
+];
+
+async function hashTrackedFiles(skillDir) {
+  const out = {};
+  for (const f of HASHED_FILES) {
+    try {
+      const buf = await readFile(path.join(skillDir, f));
+      const hash = createHash("sha256").update(buf).digest("hex");
+      out[f] = `sha256:${hash}`;
+    } catch {
+      // missing file is already flagged by required-files; skip from hashes.
+    }
+  }
+  return out;
+}
+
+/**
+ * Write an audit.json next to the skill. Captures: when it was checked, by
+ * which validator version, what checks ran, results, and file hashes. This
+ * is what gets surfaced as the "audited on YYYY-MM-DD" badge on the site
+ * and via the `get_audit_status` MCP tool.
+ */
+async function writeAudit(skillDir, issues, manifest) {
+  const audit = {
+    schemaVersion: 1,
+    skill: {
+      name: manifest?.name ?? null,
+      version: manifest?.version ?? null,
+    },
+    auditedAt: new Date().toISOString(),
+    validator: {
+      name: "localskills-validate",
+      version: VALIDATOR_VERSION,
+    },
+    result: issues.failed
+      ? "fail"
+      : issues.warnings.length > 0
+        ? "pass-with-warnings"
+        : "pass",
+    checks: [
+      "required-files",
+      "schema",
+      "permissions-scope",
+      "prompt-injection",
+      "malicious-code",
+      "undeclared-network",
+    ],
+    errors: issues.errors,
+    warnings: issues.warnings,
+    hashes: issues.hashes ?? {},
+  };
+  await writeFile(
+    path.join(skillDir, "audit.json"),
+    JSON.stringify(audit, null, 2) + "\n",
+    "utf8"
+  );
 }
 
 async function tryRead(p) {
@@ -537,6 +611,16 @@ async function main() {
       process.stdout.write(fmtIssues(issues));
     } else {
       console.log(`\n✓ ${rel}`);
+    }
+    // Write audit.json regardless of pass/fail — a failed skill still has
+    // a useful audit trail (especially for CI to publish).
+    try {
+      const manifestRaw = await readFile(path.join(dir, "skill.json"), "utf8");
+      const manifest = JSON.parse(manifestRaw);
+      await writeAudit(dir, issues, manifest);
+    } catch {
+      // If we can't read the manifest, write an audit with whatever we have.
+      await writeAudit(dir, issues, null);
     }
   }
 

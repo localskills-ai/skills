@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "paknsave-price-tracker",
+    "version": "1.0.0"
+  },
+  "auditedAt": "2026-05-21T01:26:46.820Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.2.0"
+  },
+  "result": "pass",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network"
+  ],
+  "errors": [],
+  "warnings": [],
+  "hashes": {
+    "skill.json": "sha256:d9056996e608d2037da4dfe3ae78bb831c49e3dad50bce298e75aab571ed1a9f",
+    "README.md": "sha256:a4bcf70a7528512b512de8d8d5f920920fccd7e0a21d5d1c9c0f869232d0e7a7",
+    "SKILL.md": "sha256:d11fb11dfb18a332f742591cea3ebe174d16e438dcaca66993affe6c5545282f",
+    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
+    "CHANGELOG.md": "sha256:9fae4770deaad47f7009d4c503729db9157e6b34a5f5f62f66139732a4eefbf8"
+  }
+}

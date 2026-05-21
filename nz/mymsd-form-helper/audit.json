@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "mymsd-form-helper",
+    "version": "1.0.0"
+  },
+  "auditedAt": "2026-05-21T01:26:46.817Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.2.0"
+  },
+  "result": "pass-with-warnings",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network"
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "check": "undeclared-network",
+      "message": "SKILL.md: references \"my.msd.govt.nz\" which is not in permissions.network"
+    }
+  ],
+  "hashes": {
+    "skill.json": "sha256:37f7f3dd3b1e4e51666260e82ddf29fa56f3f10e94f18ff3049fb231e1643a74",
+    "README.md": "sha256:5f451d40ac6db952ebde865fbb21f2b5e9da1059f2769020fb35d305ae54d359",
+    "SKILL.md": "sha256:e864c099926cffe7dff7239a2c92a95fe529276d66b01a819690226913e336bb",
+    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
+    "CHANGELOG.md": "sha256:10e7ce0098f17b25e7265c9fc2ac37bbba1afe780723710dc07c19ae2d8562e9"
+  }
+}

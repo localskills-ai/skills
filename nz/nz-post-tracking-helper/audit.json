@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "nz-post-tracking-helper",
+    "version": "1.0.0"
+  },
+  "auditedAt": "2026-05-21T01:26:46.819Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.2.0"
+  },
+  "result": "pass-with-warnings",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network"
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "check": "undeclared-network",
+      "message": "SKILL.md: references \"www.nzpost.co.nz\" which is not in permissions.network"
+    }
+  ],
+  "hashes": {
+    "skill.json": "sha256:c00c3861163ab0d6e8284f3ceb04cfdd505f33f1d2289a5529da852792a12b55",
+    "README.md": "sha256:2ef0e6e7ede26237cbe9ddc404c4d467969172f60826f8f9a7aef1bfbeaf9edf",
+    "SKILL.md": "sha256:ff54501b993647cb2802e95b640c6b5199ddad661b2aed1da32cd0a02c381bfb",
+    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
+    "CHANGELOG.md": "sha256:3fd2a926531cc74549895c84b4c7cb317460568c57584074204931bcfebcb463"
+  }
+}
