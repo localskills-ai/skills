@@ -7,8 +7,8 @@
 ## Output
 
 ```
-DRAFT — paste into the Woolworths app
-------------------------------------
+DRAFT — paste into the Olive chat
+---------------------------------
 
 Kia ora Woolworths team,
 
@@ -31,12 +31,23 @@ Paul
 ```
 
 ```
-What to do next
----------------
-1. Open the Woolworths app → Help → Contact us
-   (or https://www.woolworths.co.nz/info/contact-us in a browser)
-2. Paste the draft above.
-3. Attach the two photos in ~/Downloads/ww-issue-2026-05-18/.
-4. Send.
-5. If you don't get a reply within 5 working days, follow up referencing this message.
+Olive playbook
+--------------
+1. Open the Woolworths app → tap the chat icon, OR go to
+   https://www.woolworths.co.nz/info/contact-us and start the chat.
+   Olive launches automatically.
+2. When Olive asks "What can I help with today?", paste the draft above.
+3. Olive will likely ask one or two clarifying questions
+   (confirm order number, confirm item-level checkbox). Answer them
+   with the same info that's already in your draft.
+4. When Olive offers to attach a photo, say yes:
+   ~/Downloads/ww-issue-2026-05-18/strawberries.jpg
+   ~/Downloads/ww-issue-2026-05-18/mince.jpg
+5. Olive should confirm a refund will be processed and give you a
+   reference number. Note it.
+6. If Olive loops, deflects, or contradicts the s 6 CGA reference,
+   type: "Can I speak to a real person?" — this is the documented
+   escalation path and routes you to a human service rep.
+7. If neither Olive nor a human responds within 5 working days,
+   follow up referencing the Olive conversation ID.
 ```

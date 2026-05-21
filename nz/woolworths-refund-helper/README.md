@@ -1,26 +1,28 @@
 # Woolworths Refund Helper
 
-Draft a clean, [Consumer Guarantees Act](https://www.legislation.govt.nz/act/public/1993/0091/latest/DLM311053.html)-compliant refund request for a Woolworths NZ online delivery, in the time it takes to make a coffee.
+Get a refund for a poor-quality Woolworths NZ delivery — by navigating **Olive**, Woolworths' chatbot, with a clean [Consumer Guarantees Act](https://www.legislation.govt.nz/act/public/1993/0091/latest/DLM311053.html)-compliant message that prompts Olive to do the right thing. Takes about as long as making a coffee.
 
 ## What it does
 
 You've had a poor Woolworths NZ delivery. Mince that smells off. Strawberries with mould. A pack of yoghurts that arrived past its use-by date. The bag of spinach that's slimy. The pack of chicken that's leaking.
 
+Woolworths NZ's first-line customer service is **Olive** — a chatbot in the app and on the website. To get a refund processed, you have to navigate Olive's flow. Vague complaints loop back to template questions; specific, CGA-grounded messages tend to resolve in-chat without escalation.
+
 This skill helps you:
 
 1. **Identify the problem items** from your receipt and (optionally) photos you've already taken.
-2. **Quote the right Consumer Guarantees Act section** — usually s6 (acceptable quality) or s7 (fitness for purpose) — so your message lands as a clear statutory request, not a vibes-based complaint.
-3. **Draft the message** in a polite, factual tone that Woolworths' customer service can act on without back-and-forth.
-4. **Tell you exactly what to do next** — paste into the Woolworths app, the [contact form](https://www.woolworths.co.nz/info/contact-us), or 0800 40 40 40.
+2. **Quote the right Consumer Guarantees Act section** — s 6 (acceptable quality) or s 8 (fitness for particular purpose) — so the message lands as a clear statutory request that Olive's escalation logic recognises.
+3. **Draft the message** in a polite, factual tone Olive can act on without back-and-forth.
+4. **Hand you an Olive playbook** — the exact steps to walk through the chat, including the documented escape hatch ("Can I speak to a real person?") if Olive loops or deflects.
 
-It does **not** submit anything itself. The skill produces the draft. You send it.
+If you're running this skill inside a **Computer Use-enabled agent** (Claude Desktop or similar), the agent can drive the Olive chat for you with your authorisation. Otherwise, you follow the playbook by hand. Either way, the skill produces the draft + the navigation; it never logs into your account or submits anything without your action.
 
 ## What it does NOT do
 
 - It doesn't sign in to your Woolworths account.
 - It doesn't access your stored payment methods.
-- It doesn't contact Woolworths on your behalf.
 - It doesn't make legal threats. The CGA is your protection — quoting the right section is enough.
+- It doesn't treat Olive's answers as authoritative. Olive has a documented tendency to hallucinate (early 2026 incidents); the skill tells you to verify any specific factual claim Olive makes and to escalate to a human if needed.
 
 ## When to use it
 

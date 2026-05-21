@@ -5,6 +5,15 @@ All notable changes to the Woolworths Refund Helper will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] — 2026-05-21
+
+### Changed
+
+- **The real value of this skill is helping you navigate Olive — Woolworths NZ's chatbot.** Olive is the first-line customer service in the app and on the website; without specific, CGA-grounded wording Olive loops back to template questions. README, SKILL.md, and both examples rewritten around Olive as the target interface.
+- **Output is now "DRAFT — paste into the Olive chat"** plus an **Olive playbook** with the actual chat-navigation steps, including the documented escape hatch (`"Can I speak to a real person?"`) and a caution that Olive has a known hallucination tendency (early 2026 incidents).
+- **`executionModel: "computer-use-recommended"`** — when run inside a Computer Use-enabled agent (Claude Desktop etc.), the agent can drive the Olive chat directly after the user authorises it. Draft-only mode still works for everyone else.
+- Tagged `"olive"`. Updated `description` to lead with the Olive-navigation framing.
+
 ## [1.0.1] — 2026-05-21
 
 ### Fixed

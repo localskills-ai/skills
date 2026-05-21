@@ -1,8 +1,8 @@
 {
   "name": "woolworths-refund-helper",
   "displayName": "Woolworths Refund Helper",
-  "version": "1.0.1",
-  "description": "Draft Consumer Guarantees Act-compliant refund requests for poor-quality Woolworths NZ deliveries.",
+  "version": "1.0.2",
+  "description": "Navigate Olive (Woolworths NZ's chatbot) to get a CGA-compliant refund for poor-quality grocery deliveries.",
   "longDescription": "Helps you draft a clear, CGA-compliant refund request for a Woolworths NZ online delivery. Reviews receipts and photos of the problem, identifies the items affected, references the right section of the Consumer Guarantees Act 1993, and produces the message to send via the Woolworths app / contact form. Does not file the refund itself — it prepares the request and waits for you to confirm before doing anything that needs your account.",
   "creator": {
     "username": "paulgnz",
@@ -15,6 +15,7 @@
   "categories": ["retail", "legal"],
   "tags": [
     "woolworths",
+    "olive",
     "refund",
     "grocery",
     "consumer-guarantees-act",
@@ -42,6 +43,6 @@
     "currency": "USD"
   },
   "safetyLevel": "low",
-  "executionModel": "draft-only",
+  "executionModel": "computer-use-recommended",
   "verified": false
 }

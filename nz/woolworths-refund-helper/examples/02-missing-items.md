@@ -9,8 +9,8 @@
 The skill recognises this is a non-delivery, not a CGA quality issue. It still uses a polite, CGA-aware structure but doesn't cite section 6.
 
 ```
-DRAFT — paste into the Woolworths app
-------------------------------------
+DRAFT — paste into the Olive chat
+---------------------------------
 
 Kia ora Woolworths team,
 
@@ -26,12 +26,21 @@ Paul
 ```
 
 ```
-What to do next
----------------
-1. Open the Woolworths app → Help → Contact us
-   (or https://www.woolworths.co.nz/info/contact-us in a browser)
-2. Paste the draft above.
-3. No attachments needed for a non-delivery — but mention the driver's name if you remember it.
-4. Send.
-5. If you don't get a reply within 5 working days, follow up referencing this message.
+Olive playbook
+--------------
+1. Open the Woolworths app → tap the chat icon and start the chat.
+   Olive launches automatically.
+2. Paste the draft when Olive asks what you need help with.
+3. Olive may ask you to confirm the order number and which items
+   are affected — confirm.
+4. No photos needed for a non-delivery. If Olive asks, say
+   "no photos available; this is a missing-items issue".
+5. Mention the driver's name if you remember it — Olive will pass
+   it to the delivery investigation team.
+6. Olive should confirm the refund will be processed. Note the
+   reference number.
+7. If Olive loops or insists on photos for a non-delivery, type:
+   "Can I speak to a real person?"
+8. If no resolution within 5 working days, follow up referencing
+   the Olive conversation ID.
 ```
