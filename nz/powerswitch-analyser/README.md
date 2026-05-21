@@ -89,7 +89,3 @@ The skill ships with a static `plans.json` (in `assets/`) — a curated snapshot
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz). NZ power-bill comparison should not require a spreadsheet.
-
-## Version
-
-`1.0.0` — initial release.

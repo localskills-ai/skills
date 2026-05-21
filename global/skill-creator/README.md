@@ -104,7 +104,3 @@ node scripts/validate.mjs <region>/<your-slug>
 ## Author
 
 Maintained by Localskills. This is one of the few skills marked `verified: true` because it's distributed by the platform itself rather than a community contributor.
-
-## Version
-
-`1.0.0` — initial release. See [CHANGELOG.md](./CHANGELOG.md).

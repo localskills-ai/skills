@@ -104,7 +104,3 @@ This skill produces a *draft*. It is not tax advice. It does not constitute prof
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz). Validated against my own GST returns.
-
-## Version
-
-`1.0.0` — initial release. See [CHANGELOG.md](./CHANGELOG.md).

@@ -124,7 +124,3 @@ For other councils, the skill still applies Schedule 1 (which is national), but 
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz). The intent is to keep simple work simple — most decks, fences, and small structures are exempt. Hard cases go to the council.
-
-## Version
-
-`1.0.0` — initial release.

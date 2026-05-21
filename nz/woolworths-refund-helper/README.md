@@ -95,7 +95,3 @@ Built by [Paul Grey](https://secondbrain.nz) at Second Brain NZ. Tested on real 
 ## Licence
 
 MIT. See [LICENSE](./LICENSE).
-
-## Version
-
-`1.0.0` — initial release. See [CHANGELOG.md](./CHANGELOG.md).

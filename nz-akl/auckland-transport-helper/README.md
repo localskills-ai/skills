@@ -94,7 +94,3 @@ Specific. Factual. NZ-direct. AT's customer-service team handles thousands of qu
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz). Auckland-resident pain validated.
-
-## Version
-
-`1.0.0` — initial release.

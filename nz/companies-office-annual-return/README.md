@@ -67,7 +67,3 @@ Plus a draft AGM minutes / shareholders' resolution if you don't have one.
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz). Designed for solo / micro-company directors who fly close to the deadline.
-
-## Version
-
-`1.0.0` — initial release.

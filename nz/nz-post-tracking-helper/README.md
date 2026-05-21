@@ -82,7 +82,3 @@ Polite. Factual. NZ-direct. The skill writes claims that customer service can ac
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz).
-
-## Version
-
-`1.0.0` — initial release.

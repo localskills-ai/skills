@@ -97,7 +97,3 @@ You can edit it directly if you want.
 ## Author
 
 Paul Grey at [Second Brain NZ](https://secondbrain.nz). NZ-style cost-of-living useful, not a money-saving evangelist.
-
-## Version
-
-`1.0.0` — initial release.
