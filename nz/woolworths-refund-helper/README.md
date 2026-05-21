@@ -90,7 +90,7 @@ Polite. Factual. Specific. No threats, no escalation, no Karen energy. The CGA d
 
 ## Author
 
-Built by [Paul Grey](https://secondbrain.nz) at Second Brain NZ. Tested on real Woolworths refund cases — works.
+Built by [Paul Grey](https://x.com/paulgrey). Tested on real Woolworths refund cases — works.
 
 ## Licence
 

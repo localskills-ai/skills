@@ -90,4 +90,4 @@ Marked `medium` because the skill touches benefits applications. Wrong informati
 
 ## Author
 
-Paul Grey at [Second Brain NZ](https://secondbrain.nz). Designed with respect for users navigating MSD's processes.
+Paul Grey ([@paulgrey](https://x.com/paulgrey)). Designed with respect for users navigating MSD's processes.

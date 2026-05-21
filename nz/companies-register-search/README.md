@@ -120,4 +120,4 @@ Searching the register is **free**. There is no charge for viewing company detai
 
 ## Author
 
-Paul Grey at [Second Brain NZ](https://secondbrain.nz). A 60-second due-diligence habit that's saved enough disputes to be worth automating.
+Paul Grey ([@paulgrey](https://x.com/paulgrey)). A 60-second due-diligence habit that's saved enough disputes to be worth automating.

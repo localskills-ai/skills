@@ -90,4 +90,4 @@ NZ-direct. The Trade Me readership rewards honest descriptions. "I drove this fo
 
 ## Author
 
-Paul Grey at [Second Brain NZ](https://secondbrain.nz).
+Paul Grey ([@paulgrey](https://x.com/paulgrey)).
