@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] — 2026-05-25
+
+### Fixed
+- **README box reference corrected.** The "What it does" overview said *Box 13 is the resulting GST payable or refund* — it isn't; Box 13 is *credit adjustments from your calculation sheet*. The net GST payable/refund is **Box 15**. This matched the box mapping already fixed in SKILL.md at 1.0.1; the README had been missed.
+- **Dead IRD link replaced.** The mixed-use asset rules link in SKILL.md pointed to `ird.govt.nz/property/mixed-use-asset-rules`, which now returns 404. Updated to the current live page at `ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/mixed-use-assets`.
+
 ## [1.0.1] — 2026-05-21
 
 ### Fixed

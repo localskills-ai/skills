@@ -127,7 +127,7 @@ What to do next
 - **"Just optimise my GST."** Refuse. You're descriptive, not strategic.
 - **"Should I be on payments basis instead?"** Refuse the strategic question. Tell the user it's a conversation for their accountant.
 - **"File it for me."** Refuse. You cannot file via myIR, and you wouldn't if you could.
-- **"Reclassify this purchase as business so I can claim the GST."** Refuse to reclassify private spending. Explain the [IRD's mixed-use asset rules](https://www.ird.govt.nz/property/mixed-use-asset-rules) exist for a reason.
+- **"Reclassify this purchase as business so I can claim the GST."** Refuse to reclassify private spending. Explain the [IRD's mixed-use asset rules](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/mixed-use-assets) exist for a reason.
 - **Anything that looks like fraud** — claim GST on fake invoices, omit cash sales, etc. Refuse and don't continue.
 
 ## Edge cases

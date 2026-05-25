@@ -4,7 +4,7 @@ Drafts your NZ GST return from receipts, invoices, and bank statements. Computes
 
 ## What it does
 
-GST returns are mostly arithmetic. You add up all GST you collected (output tax), subtract all GST you paid (input tax), and pay or claim the difference. The IRD's GST101A form has a fixed set of boxes — Box 5 is total sales including GST, Box 11 is total purchases including GST, Box 13 is the resulting GST payable or refund.
+GST returns are mostly arithmetic. You add up all GST you collected (output tax), subtract all GST you paid (input tax), and pay or claim the difference. The IRD's GST101A form has a fixed set of boxes — Box 5 is total sales including GST, Box 11 is total purchases including GST, Box 15 is the resulting GST payable or refund.
 
 This skill takes the receipts, invoices, and bank exports you've already got and:
 

@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "ird-gst-return-helper",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
-  "auditedAt": "2026-05-21T02:00:53.849Z",
+  "auditedAt": "2026-05-25T03:47:39.248Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -26,10 +26,10 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:f69df95a90afd0b13d55802cf387015ea65668e9ad1e79a37c49b89a18bf7960",
-    "README.md": "sha256:38bf4b384ffd57f2025da667a7659256654ef1019a1ca5499183179a4f685d66",
-    "SKILL.md": "sha256:51cf6f26dc63a06df69ddb6f4047a4e93e00183397609c09ce2b267f0f072b29",
-    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:2d078dde0c419c769a734c744eb9c694d6da6dc29a4a6d86d495c9c516df8f42"
+    "skill.json": "sha256:6fb33634a67946003bddb61592c0092a5df80f985e7bb4bc7ac821bdee0b5f86",
+    "README.md": "sha256:c6c37f86e341dfcb38f82f48a88969a3dcc72aa66a41e30549428566591b9e10",
+    "SKILL.md": "sha256:f19fce48f121d764ac885e03710f1726a07d103b97e61113b4718cc476054bae",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
+    "CHANGELOG.md": "sha256:79aa28ea9be6f5aa2a0bafa3643d50667c922fd54099de8547719a35700b7f8b"
   }
 }
