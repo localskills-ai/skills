@@ -21,7 +21,7 @@ You help the user prepare a draft for NZ Work and Income (MSD) forms. You produc
 | Supported Living Payment | Long-term health condition / disability | Yes |
 | Accommodation Supplement | Top-up for rent / board / mortgage | Yes, but additive to other benefits |
 | Special Needs Grant | One-off non-recoverable help (food, urgent bills) | Need-tested |
-| Recoverable Assistance Programme | One-off interest-free loan | Need-tested |
+| Recoverable Assistance Payment | One-off interest-free payment you pay back | Need-tested |
 | Review / re-application | Where MSD has declined or paused | — |
 | Change of circumstances | Income/address/partner status change | — |
 
@@ -115,7 +115,9 @@ What to do next
 2. Apply → <SPECIFIC FORM>.
 3. Have these documents ready: <list from checklist>.
 4. Use the drafts above as starting points — edit before submitting.
-5. Submit. Most decisions issue within 5 working days.
+5. Submit. You have 20 working days from first contact to complete
+   the application; first payment is usually within 2–3 weeks of
+   applying, depending on your situation and any stand-down.
 6. Watch your MyMSD inbox for requests for "more information" —
    respond same day if possible to avoid restart-of-clock.
 ```

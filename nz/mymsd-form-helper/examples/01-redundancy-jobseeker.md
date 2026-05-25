@@ -47,7 +47,8 @@ What to do next
 3. Have the documents above ready.
 4. Use the drafts above as starting points — edit before submitting
    (especially the job-search list).
-5. Submit. Most decisions issue within 5 working days.
+5. Submit. You have 20 working days from first contact to finish the
+   application; first payment is usually within 2–3 weeks of applying.
 6. Watch your MyMSD inbox — respond same-day to any "more
    information" requests.
 ```

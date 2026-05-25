@@ -24,7 +24,7 @@ MSD interactions can feel high-stakes. The system rewards clear, specific, evide
 - **Supported Living Payment** (for those with a long-term health condition or disability).
 - **Accommodation Supplement** (a top-up for rent / board / mortgage).
 - **Special Needs Grant** (one-off, non-recoverable — for food, urgent bills).
-- **Recoverable Assistance Programme** loans (food, urgent dental, white goods).
+- **Recoverable Assistance Payment** (a one-off payment you pay back — food, urgent dental, white goods; for people not currently on a benefit).
 - **Review / re-application** after a decline or pause.
 - **Change-of-circumstances** notifications (income change, address change, partner status).
 
@@ -80,7 +80,7 @@ The skill writes in this register by default.
 
 - Tell you whether you're eligible. MSD decides that.
 - Help you misrepresent your circumstances. Refused at all costs.
-- Help you "appeal" a decision — appeals go to the [Social Security Appeal Authority](https://www.msd.govt.nz/about-msd-and-our-work/about-msd/our-structure/decision-making/appeals.html); the skill can help draft, but always recommends talking to a budgeting service or [Community Law](https://communitylaw.org.nz/) first.
+- Help you "appeal" a decision — a decision is first reviewed by MSD's Benefits Review Committee, after which it can be appealed to the [Social Security Appeal Authority](https://www.justice.govt.nz/tribunals/social-security-appeal-authority/) (run by the Ministry of Justice, not MSD); the skill can help draft, but always recommends talking to a budgeting service or [Community Law](https://communitylaw.org.nz/) first.
 - Provide legal advice. Welfare law is genuinely complex.
 - Suggest claiming for someone else without their knowledge or consent.
 
