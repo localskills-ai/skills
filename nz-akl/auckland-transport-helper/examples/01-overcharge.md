@@ -25,8 +25,8 @@ difference.
 ```
 What to do next
 ---------------
-1. AT contact form: https://at.govt.nz/contact/contact-us
-2. Select "AT HOP" → "Fare query".
+1. AT contact us page: https://at.govt.nz/about-us/contact-us
+2. Use the AT HOP / fare enquiry option (online form or phone).
 3. Paste the message above; attach your AT Mobile transaction screenshot.
 4. Refunds typically credit to the card within 5 working days.
 5. If you don't hear back in 7 working days, follow up referencing this message.

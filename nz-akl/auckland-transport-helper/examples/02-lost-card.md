@@ -25,10 +25,13 @@ the remaining balance and Tertiary concession to the new card.
 ```
 What to do next
 ---------------
-1. Sign in to AT HOP online: https://at.govt.nz/bus-train-ferry/at-hop-card/
-2. Lost / stolen card → "Report card lost".
-3. The site will disable the card immediately.
-4. Replacement card mails to the registered address (about 3 working days).
-5. Until the new card arrives, top up paper / contactless options on
-   the bus, or use AT Mobile with QR (where supported on your route).
+1. Sign in to your MyAT account: https://at.govt.nz/bus-train-ferry/at-hop-card
+2. Go to AT HOP → "Cancel AT HOP card" (or call the AT HOP centre on
+   09 366 4467 to report it lost / stolen).
+3. AT protects your account balance within 24 hours of the online
+   cancellation or phone call.
+4. Order a replacement and transfer the remaining balance to it via
+   your MyAT account; the new card mails to the registered address.
+5. Until the new card arrives, use a contactless card / device to pay
+   on board (where supported on your route).
 ```

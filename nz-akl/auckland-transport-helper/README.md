@@ -21,7 +21,7 @@ The friction in Auckland public transport isn't usually the trip itself — it's
 
 - Live disruptions. Check AT Mobile or @AucklandTransport on X.
 - Wrong driver behaviour requiring formal complaint to Auckland Council — that's a different process; the skill points you there.
-- Fare zone definitions. Those are AT's, not the skill's; if you disagree about whether your trip is 1 zone or 2, the skill notes that and recommends checking AT's [zone map](https://at.govt.nz/bus-train-ferry/fares-discounts/at-hop-card/fares/).
+- Fare zone definitions. Those are AT's, not the skill's; if you disagree about whether your trip is 1 zone or 2, the skill notes that and recommends checking AT's [zone map](https://at.govt.nz/bus-train-ferry/fares-and-discounts/fare-zones-and-calculating-how-much-you-pay).
 
 ## Inputs
 
@@ -33,7 +33,7 @@ The friction in Auckland public transport isn't usually the trip itself — it's
 
 ## Outputs
 
-A message you paste into [AT's contact form](https://at.govt.nz/contact/contact-us) or email to customerservice@at.govt.nz, plus what to do next.
+A message you submit via [AT's contact us page](https://at.govt.nz/about-us/contact-us) (online form / phone), plus what to do next.
 
 ```
 DRAFT — AT Customer Service inquiry
@@ -59,8 +59,8 @@ Receipt screenshot attached.
 ```
 What to do next
 ---------------
-1. AT contact form: https://at.govt.nz/contact/contact-us
-2. Select "AT HOP" → "Fare query".
+1. AT contact us page: https://at.govt.nz/about-us/contact-us
+2. Use the AT HOP / fare enquiry option (online form or phone).
 3. Paste the message and attach the screenshot.
 4. Refunds usually credit to the card within 5 working days.
 ```
@@ -78,8 +78,8 @@ What to do next
 |------------|----------|------|-----------------|
 | Adult | None (baseline) | Always | Default on new HOP cards |
 | Child (5–15) | 40% off Adult; free weekends + public holidays | Always | Apply with proof of age |
-| Secondary (16–19) | 40% off Adult | Always | Apply via [AT website](https://at.govt.nz/bus-train-ferry/fares-discounts/concessions/) with school confirmation |
-| Tertiary | 40% off Adult (raised from 25% in late 2025) | Always | Apply via AT website with student ID |
+| Secondary (16–19) | 40% off Adult | Always | Apply via [AT website](https://at.govt.nz/bus-train-ferry/fares-and-discounts/discounted-fares) with school confirmation |
+| Tertiary | 40% off Adult (doubled from 20% on 14 December 2025) | Always | Apply via your MyAT account with student ID |
 | SuperGold (65+) | Free | After 9am weekdays + all day weekends/public holidays | Register SuperGold to AT HOP |
 | SuperGold (65+) | Adult fare | Before 9am weekdays | (i.e. peak fare applies) |
 | Community Services Card (Community Connect) | 50% off Adult | Always | Apply via AT Community Connect form |
