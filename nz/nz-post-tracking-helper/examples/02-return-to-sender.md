@@ -18,8 +18,8 @@ Returning the following items under the Consumer Guarantees Act 1993
 Could you confirm:
 1. Whether you want the item returned, photo evidence, or both.
 2. The return shipping address and whether you'll cover the return
-   postage (under s 18(2) the retailer covers reasonable costs of
-   returning faulty goods).
+   postage (under s 18(4) the retailer covers reasonable costs of
+   returning faulty goods as a foreseeable loss).
 
 Thanks,
 <NAME>
@@ -28,7 +28,8 @@ Thanks,
 ```
 What to do next
 ---------------
-1. Email Mighty Ape's support@mightyape.co.nz.
+1. Contact Mighty Ape via their Help Centre (help.mightyape.co.nz) —
+   email help@mightyape.co.nz or use live chat.
 2. Paste the draft.
 3. Wait for return instructions before posting anything.
 4. Use NZ Post Tracked or CourierPost — keep the receipt.

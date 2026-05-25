@@ -1,7 +1,7 @@
 {
   "name": "nz-post-tracking-helper",
   "displayName": "NZ Post Tracking & Returns Helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tracks NZ Post / CourierPost parcels from your tracking numbers and drafts returns labels and missing-parcel claims.",
   "longDescription": "You give the skill tracking numbers and screenshots of confirmation emails; it produces a clean status board, predicts likely delivery windows from carrier history, and drafts the wording for a missing-parcel claim or a returns shipment to the original sender. Does not contact NZ Post — you submit any claim through their portal yourself.",
   "creator": {

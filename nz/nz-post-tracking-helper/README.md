@@ -7,7 +7,7 @@ You feed the skill tracking numbers and screenshots of confirmation emails. It p
 - Takes tracking numbers (NZ Post / CourierPost / Pace) and pasted status screenshots and keeps a tidy "what's in transit" view.
 - Drafts the wording for a **missing-parcel claim** through NZ Post's online claim form when something hasn't moved in too long.
 - Drafts the wording for a **returns shipment** to the original sender — including consumer-rights references where relevant.
-- Calculates the realistic delivery window for a given service tier (Economy vs Tracked vs CourierPost overnight).
+- Calculates the realistic delivery window for a given service tier (Courier next-working-day vs Economy / Courier Economy up to 3 working days).
 
 It does NOT scrape NZ Post's tracking page. You give it the status text or screenshot; the skill structures it.
 
@@ -76,7 +76,7 @@ Polite. Factual. NZ-direct. The skill writes claims that customer service can ac
 
 - Auto-poll NZ Post's tracking page. NZ Post's terms forbid scraping; we comply.
 - Generate a label. NZ Post labels require account integration and prepaid postage.
-- File a claim on your behalf. You submit through the [NZ Post claims portal](https://www.nzpost.co.nz/help-support/claim-a-refund-or-loss).
+- File a claim on your behalf. You submit through NZ Post's [parcel enquiry form](https://www.nzpost.co.nz/contact-support/parcel-enquiry).
 - Determine whether something is genuinely lost. The skill flags items that look stuck; the carrier decides.
 
 ## Author

@@ -10,8 +10,9 @@ Active parcels (1)
 NZ555444333NZ  Trade Me  Delayed  In transit since 2026-05-11
 
 Flagged for action:
-  - NZ555444333NZ has been "In transit" for 8 working days. Economy
-    Tracked typical window is 2–7 working days. Time to inquire.
+  - NZ555444333NZ has been "In transit" for 8 working days. Economy's
+    target is up to 3 working days (flag at day 5). Well past — time
+    to inquire.
 ```
 
 ```
