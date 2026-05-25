@@ -1,7 +1,7 @@
 {
   "name": "companies-register-search",
   "displayName": "NZ Companies Register Search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Looks up NZ companies on the Companies Register. Due diligence, director / shareholder checks, liquidation flags.",
   "longDescription": "Helps you investigate a NZ company before doing business with it. Walks you through the right search (by company name, NZBN, or director), explains the search results so you don't miss the obvious red flags (notice of removal, liquidation, struck-off), and produces a clean due-diligence summary. Read-only: the skill never makes changes to the register. Cites the Companies Act 1993 sections where relevant. Does not contact the Companies Office API.",
   "creator": {

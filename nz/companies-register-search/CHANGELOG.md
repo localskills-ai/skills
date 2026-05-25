@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] — 2026-05-25
+
+### Fixed
+- **Companies Office complaints URL corrected.** The old `companiesoffice.govt.nz/help-and-support/contact-us/` path now returns 404; updated the "file a complaint against a director" pointer to the current `companiesoffice.govt.nz/about-us/our-enforcement-approach/make-a-complaint/` page.
+
 ## [1.0.0] — 2026-05-21
 
 ### Added

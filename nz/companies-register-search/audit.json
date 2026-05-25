@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "companies-register-search",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T02:00:53.847Z",
+  "auditedAt": "2026-05-25T03:47:39.246Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,10 +21,10 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:c1f723d90c9746b67faaf43cc970366f75d078834f189df69ec919088dea47d4",
-    "README.md": "sha256:0259b62a0dca20f721e0e7551c74f25beb653868e1ab13dbbdc5d26a8c9e525d",
-    "SKILL.md": "sha256:60dc53421d6ae6392c4a6dc83f7a779cd0ffe30a8057a2efec08ff8ccd9fa809",
-    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:afdfe69e9520f1821b11fcbf47e2248a6956917973ac6af5addee61ac8746051"
+    "skill.json": "sha256:bb7ffe9ef0ed2755ef2fed66d913199f81df48948664e337b6314b19893f2a47",
+    "README.md": "sha256:11597ce98a227d2b610ea74f1a8a6c03514c98d4bb8c181f9681e91729d6dbbf",
+    "SKILL.md": "sha256:0a6927588d580185da0a20a88955bcb46a0832085a91729033aaf96c091aa622",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
+    "CHANGELOG.md": "sha256:a0391c83112f5ab201da745a561f2a6166ebea880c18a6658fb50882c27ddee4"
   }
 }

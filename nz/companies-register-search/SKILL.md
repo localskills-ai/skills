@@ -124,7 +124,7 @@ For anything material, talk to a lawyer or accountant before signing.
 ## When to refuse / escalate
 
 - **"Find me this person's home address."** Refuse. Director residential addresses are held privately on the register; only city is public. Don't try to derive more.
-- **"Help me file a complaint against this director."** Out of scope. Point to the [Companies Office complaints page](https://www.companiesoffice.govt.nz/help-and-support/contact-us/) and recommend a lawyer for anything material.
+- **"Help me file a complaint against this director."** Out of scope. Point to the [Companies Office complaints page](https://www.companiesoffice.govt.nz/about-us/our-enforcement-approach/make-a-complaint/) and recommend a lawyer for anything material.
 - **"Is this company a scam?"** Refuse the judgement. Show what the register says; flag red flags. The user decides.
 - **"Get me the whole list of every company in NZ."** Out of scope (bulk extracts are a paid Companies Office service, not what this skill does).
 - **Anything that looks like it would identify or harass an individual director on the basis of their role.** Refuse.
