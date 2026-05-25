@@ -13,8 +13,9 @@ flat site in Auckland Council's Mixed Housing Suburban zone.
 
 Building consent
 ----------------
-LIKELY EXEMPT under Schedule 1, clause 3 — decks not more than 1.5m
-above the supporting ground.
+LIKELY EXEMPT under Schedule 1, clause 24 — decks, platforms and the
+like from which it is not possible to fall more than 1.5m even if
+they collapse.
 
 Still need to:
   - Comply with the Building Code (handrails, structural adequacy).
@@ -31,7 +32,7 @@ within:
   - No special character / heritage overlay (check your LIM).
 
 You should still:
-  - Pull a LIM (~$58 from Auckland Council) and look for overlays.
+  - Pull a LIM (~$375 for a standard LIM from Auckland Council) and look for overlays.
   - Confirm with your neighbours — early conversation prevents
     expensive surprises.
 

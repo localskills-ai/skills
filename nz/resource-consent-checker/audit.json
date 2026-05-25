@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "skill": {
     "name": "resource-consent-checker",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
-  "auditedAt": "2026-05-21T02:00:53.857Z",
+  "auditedAt": "2026-05-25T03:47:39.259Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.2.0"
@@ -21,10 +21,10 @@
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:50d670a1a34fc875bd34e1fed48a50ade6e14a38538dfb45aa5507168dc8d6e9",
-    "README.md": "sha256:10e6fbf4595690feea9192bff58361fd82b69c50186f530f841d20690edb83a1",
-    "SKILL.md": "sha256:743b87080e38da2c9446af30bdd71b92aebf6af0abef0fe39e57fa07f470d2d5",
-    "LICENSE": "sha256:f982e78447c0afd286be1cefb313b4c6cd65dde4c1616ed007c133e9e075ab1a",
-    "CHANGELOG.md": "sha256:788266ba6df65b746556ae0f38114d62ac7665d442b7ee714b6e2f56aeff2b19"
+    "skill.json": "sha256:eab72ab9ae0b4736cb57100ac1677e05bc02a1fc7a3d1e67544297356e0c7621",
+    "README.md": "sha256:cd2ef7176b7ee9ebbfb3be05af19b32cf3fed96fd5ae53d37824b2bc19157cd1",
+    "SKILL.md": "sha256:04d611c446e351c8c97ae59448f83b3da5732da7e9317231948ac6d268ac1422",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
+    "CHANGELOG.md": "sha256:1b42616d903bc53f8fdb7903ed1f50b44bdf2eb3b293f7800123142494042d85"
   }
 }

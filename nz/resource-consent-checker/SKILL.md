@@ -14,14 +14,13 @@ You assess whether a proposed building / site work needs a building consent (Bui
 
 Common Schedule 1 exemptions (Building Act 2004 — national, applies everywhere):
 
-- **Clause 1**: Single-storey detached buildings ≤ 10m² (with material conditions — no sleeping rooms, no cooking, no plumbing).
-- **Clause 2**: Single-storey buildings ≤ 30m² built or supervised by a Licensed Building Practitioner (LBP) or chartered engineer.
-- **Clause 3**: Verandas, decks, porches, patios ≤ 1.5m above the supporting ground.
-- **Clause 4**: Awnings.
-- **Clause 12**: Retaining walls ≤ 1.5m in height with no surcharge from buildings or driveways.
-- **Clause 17**: Repair / replacement of components with comparable like-for-like material.
-- **Clause 28**: Internal alterations to existing non-residential buildings (subject to conditions).
-- **Clause 36**: Footings of small light-frame timber building.
+- **Clause 1**: General repair, maintenance, and replacement of components with comparable like-for-like material.
+- **Clause 3**: Single-storey detached buildings ≤ 10m² in floor area (with material conditions — no sanitary facilities or potable-water storage, sleeping only if connected to a dwelling and no cooking).
+- **Clause 3B**: Single-storey detached buildings over 10m² but ≤ 30m², where the design/construction is carried out or supervised by a Licensed Building Practitioner or chartered professional engineer, or built from lightweight materials.
+- **Clause 16**: Awnings.
+- **Clause 17**: Porches and verandas (subject to conditions).
+- **Clause 20**: Retaining walls retaining ≤ 1.5m depth of ground with no surcharge from buildings or driveways.
+- **Clause 24**: Decks, platforms, bridges, boardwalks and the like from which it is not possible to fall more than 1.5m.
 
 Most fences ≤ 2.5m are also generally exempt as a fencing-related work, separately under the Fencing Act and council bylaws — flag the boundary fence question.
 

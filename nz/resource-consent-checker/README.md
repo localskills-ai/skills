@@ -7,7 +7,7 @@ You describe the work you want to do at your property. The skill tells you wheth
 NZ has two parallel consent systems people regularly confuse:
 
 - **Building consent** — issued by your local council under the [Building Act 2004](https://www.legislation.govt.nz/act/public/2004/0072/latest/DLM306036.html). About structural / safety / energy / sanitary compliance. [Schedule 1 of the Act](https://www.legislation.govt.nz/act/public/2004/0072/latest/DLM306902.html) lists work that's **exempt** from building consent.
-- **Resource consent** — issued by your local council under the [Resource Management Act 1991](https://www.legislation.govt.nz/act/public/1991/0069/latest/DLM230264.html) (currently being phased out — the Natural and Built Environment Act and Spatial Planning Act are taking over). About land use, heritage, neighbour effects, district-plan zoning rules.
+- **Resource consent** — issued by your local council under the [Resource Management Act 1991](https://www.legislation.govt.nz/act/public/1991/0069/latest/DLM230264.html). About land use, heritage, neighbour effects, district-plan zoning rules. (The Natural and Built Environment Act and Spatial Planning Act 2023 were repealed in late 2023, so the RMA 1991 remains the in-force law. Replacement legislation — a Planning Bill and a Natural Environment Bill — was introduced in December 2025 but is not yet law.)
 
 A simple deck might be exempt under both. A small dwelling might need both. A retaining wall over 1.5m needs a building consent but might also need resource consent if it changes site stormwater. The rules are real and councils enforce them.
 
@@ -56,9 +56,9 @@ section in Auckland Council's Mixed Housing Suburban zone.
 
 Building consent
 ----------------
-LIKELY EXEMPT under Schedule 1, clause 1(a) — single-storey decks
-not more than 1.5m above the supporting ground, with no specified
-construction prerequisites for clause 1(a).
+LIKELY EXEMPT under Schedule 1, clause 24 — decks, platforms and
+the like from which it is not possible to fall more than 1.5m even
+if they collapse.
 
 Still need to:
   - Comply with Building Code regardless of consent exemption.
@@ -90,7 +90,7 @@ Call council if
 Recommendation
 --------------
 Likely safe to proceed without consents, BUT pull a LIM for your
-property (~$58 at Auckland Council) and check for overlays before
+property (~$375 for a standard LIM at Auckland Council) and check for overlays before
 starting. If anything on the LIM is unfamiliar, ring the duty
 planner — free, 09 301 0101.
 

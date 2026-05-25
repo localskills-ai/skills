@@ -15,9 +15,10 @@ Building consent
 ----------------
 LIKELY REQUIRED.
 
-Schedule 1, clause 12 exempts retaining walls **not exceeding 1.5m**
-in height with no surcharge from buildings or driveways. At 1.8m
-you're above the exemption — building consent required.
+Schedule 1, clause 20 exempts retaining walls that retain **not more
+than 1.5m depth of ground** with no surcharge from buildings or
+driveways. At 1.8m you're above the exemption — building consent
+required.
 
 Resource consent
 ----------------
