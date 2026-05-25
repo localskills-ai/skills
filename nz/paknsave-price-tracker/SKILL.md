@@ -24,9 +24,9 @@ You maintain a price history for groceries the user buys at PAK'nSAVE NZ. After 
 Build slugs from product description + size:
 
 - `"Anchor Blue Milk 2L"` → `anchor-blue-milk-2l`
-- `"PAMS Free Range Eggs Size 6 1Dz"` → `pams-free-range-eggs-size-6-dz`
+- `"Pams Free Range Eggs Size 6 1Dz"` → `pams-free-range-eggs-size-6-dz`
 
-Lowercase, alphanumerics + hyphens, strip noise words (`PAMS`, `Brand`), keep the differentiating qualifier.
+Lowercase, alphanumerics + hyphens, strip pack-noise words (e.g. `1Dz`, `Pack`), keep the brand and the differentiating qualifier (Pams is PAK'nSAVE's house brand, so it stays in the slug).
 
 Ask the user to confirm before creating a new slug — better to merge with an existing item than fragment the history.
 

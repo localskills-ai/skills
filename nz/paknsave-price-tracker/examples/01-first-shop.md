@@ -14,7 +14,7 @@ Update: 2026-05-18, PAK'nSAVE Lincoln Rd
 
   Anchor blue milk 2L     $4.20  (new)
   Vogel's original 750g   $6.40  (new)
-  PAMS free-range eggs 12pk  $9.50  (new)
+  Pams free-range eggs 12pk  $9.50  (new)
 
 No prior history to compare against — come back next shop and I'll start
 flagging changes.

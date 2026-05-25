@@ -1,7 +1,7 @@
 {
   "name": "paknsave-price-tracker",
   "displayName": "PAK'nSAVE Price Tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tracks PAK'nSAVE NZ shelf prices across your saved staples list and tells you when something jumps.",
   "longDescription": "Maintains a list of grocery items you buy regularly at PAK'nSAVE NZ. Reads price screenshots or in-app exports you provide on each shop and tracks the per-unit price over time. Flags price changes above your threshold, notes whether something is on special, and suggests when bulk-buy makes sense based on your shop frequency. Does not scrape PAK'nSAVE's site — you feed it the prices.",
   "creator": {
