@@ -5,6 +5,12 @@ All notable changes to the Woolworths Refund Helper will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this skill adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] — 2026-05-25
+
+### Fixed
+
+- **Order number prefix corrected to `CD`, not `WW`.** Woolworths NZ delivery order numbers keep the legacy **Countdown** `CD` prefix after the rebrand (e.g. `CD1234567`). The format note in SKILL.md and the worked examples previously used a fabricated `WW` prefix; corrected throughout (SKILL.md, README, and all three examples).
+
 ## [1.0.2] — 2026-05-21
 
 ### Changed

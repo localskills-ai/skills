@@ -2,7 +2,7 @@
 
 ## Input
 
-> Order WW5550123, delivered yesterday. I bought a pack of those new oat-milk yoghurts but I don't actually like them — they're fine, just not for me. Can you draft a refund request?
+> Order CD5550123, delivered yesterday. I bought a pack of those new oat-milk yoghurts but I don't actually like them — they're fine, just not for me. Can you draft a refund request?
 
 ## Output
 

@@ -44,7 +44,7 @@ Don't use it for:
 
 The skill works with whatever you have:
 
-- **Order number** (e.g. `WW1234567`) — most useful, gives Woolworths an exact reference.
+- **Order number** (e.g. `CD1234567`) — most useful, gives Woolworths an exact reference.
 - **Order date** and **delivery date** — fine as fallback.
 - **Receipt / order summary** — paste it or point to a PDF in your downloads. The skill can read both.
 - **Photos of the problem** — optional but enormously helpful, especially for produce/packaging issues. Point to a folder or attach.
@@ -72,7 +72,7 @@ Plus a one-line "what to do next" — where to paste it.
 
 ## Example
 
-> **You:** "Order WW1234567 arrived 2026-05-18, the punnet of strawberries had mould, and the pack of mince smelled off — both perishables, I refrigerated them within 10 minutes of delivery. Photos in `~/Downloads/ww-issue/`."
+> **You:** "Order CD1234567 arrived 2026-05-18, the punnet of strawberries had mould, and the pack of mince smelled off — both perishables, I refrigerated them within 10 minutes of delivery. Photos in `~/Downloads/ww-issue/`."
 
 The skill drafts a message you paste into the Woolworths app, quotes s6 of the CGA (acceptable quality — perishables not safe to eat), references your order number, lists both items, requests a refund, and reminds you to attach the two photos.
 

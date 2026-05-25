@@ -2,7 +2,7 @@
 
 ## Input
 
-> Order WW1234567, delivered 2026-05-18 (home delivery). The 250g punnet of NZ strawberries had visible mould on top, and the 500g pack of beef mince was off-smelling when I opened it. Both went straight in the fridge within 10 minutes of delivery. I have two photos in `~/Downloads/ww-issue-2026-05-18/`.
+> Order CD1234567, delivered 2026-05-18 (home delivery). The 250g punnet of NZ strawberries had visible mould on top, and the 500g pack of beef mince was off-smelling when I opened it. Both went straight in the fridge within 10 minutes of delivery. I have two photos in `~/Downloads/ww-issue-2026-05-18/`.
 
 ## Output
 
@@ -12,7 +12,7 @@ DRAFT — paste into the Olive chat
 
 Kia ora Woolworths team,
 
-I'd like to request a refund under the Consumer Guarantees Act for the following items on order WW1234567, delivered 18 May 2026:
+I'd like to request a refund under the Consumer Guarantees Act for the following items on order CD1234567, delivered 18 May 2026:
 
 - 250g punnet NZ strawberries — visible mould on delivery
 - 500g pack beef mince — off-smelling on opening, not safe to consume

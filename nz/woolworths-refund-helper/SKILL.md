@@ -22,7 +22,7 @@ You help a Woolworths NZ customer get a refund for a poor-quality online deliver
 
 The user can provide any combination of:
 
-- An **order number** (format: `WW` followed by 6–10 digits, e.g. `WW1234567`).
+- An **order number** (format: `CD` followed by 6–10 digits, e.g. `CD1234567` — the `CD` is the legacy Countdown prefix, retained on order numbers after the rebrand to Woolworths NZ).
 - An **order date** and **delivery date** (ISO format `YYYY-MM-DD` preferred; accept other formats and normalise).
 - A **receipt or order summary** — pasted text, a PDF in the user's downloads, or a screenshot.
 - **Photos** of the problem items, referenced by path.

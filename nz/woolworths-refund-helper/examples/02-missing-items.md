@@ -2,7 +2,7 @@
 
 ## Input
 
-> Order WW9876543 from yesterday — I was charged for 2 cartons of free-range eggs but they didn't arrive. The driver said they "must have missed them" when I called. I don't have an order receipt PDF but I can see the order summary in the app.
+> Order CD9876543 from yesterday — I was charged for 2 cartons of free-range eggs but they didn't arrive. The driver said they "must have missed them" when I called. I don't have an order receipt PDF but I can see the order summary in the app.
 
 ## Output
 
@@ -14,7 +14,7 @@ DRAFT — paste into the Olive chat
 
 Kia ora Woolworths team,
 
-I'd like to request a refund for items charged but not delivered on order WW9876543:
+I'd like to request a refund for items charged but not delivered on order CD9876543:
 
 - 2 × dozen free-range eggs — charged on the order summary, not in the delivery, confirmed missing by the driver at the door.
 
