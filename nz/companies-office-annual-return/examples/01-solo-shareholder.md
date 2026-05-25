@@ -47,8 +47,10 @@ resolves as follows:
 
 2. <YOUR NAME> continues as director.
 
-3. The company will not appoint an auditor for the coming year
-   under s 207I of the Companies Act 1993 (small-company exemption).
+3. The company is not required to appoint an auditor for the coming
+   year. (A small private company with fewer than 10 shareholders
+   that is not "large" or an FMC reporting entity is not required to
+   have its financial statements audited.)
 
 Signed:
   ________________________     ________________________

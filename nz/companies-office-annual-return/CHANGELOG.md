@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.2] — 2026-05-25
+
+### Fixed
+- **Example 1 audit citation corrected.** The solo-shareholder resolution wrongly invoked "s 207I (small-company exemption)" — s 207I is the opt-out for companies with 10+ shareholders, not a small-company exemption. Reworded to state that a small private company with fewer than 10 shareholders (not "large" or an FMC reporting entity) is simply not required to have its financial statements audited, matching the correction already made in SKILL.md.
+
 ## [1.0.1] — 2026-05-21
 
 ### Fixed
