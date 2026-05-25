@@ -1,5 +1,5 @@
 {
-  "name": "example-skill",
+  "name": "minimal-skill",
   "displayName": "Example Skill (template)",
   "version": "0.1.0",
   "description": "Reference template showing the minimum viable structure for a Localskills submission.",
@@ -25,5 +25,6 @@
     "price": 0,
     "currency": "USD"
   },
-  "safetyLevel": "low"
+  "safetyLevel": "low",
+  "executionModel": "draft-only"
 }
