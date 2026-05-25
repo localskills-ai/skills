@@ -20,7 +20,7 @@ It does NOT post the listing. Trade Me Buyer Protection requires you list yourse
 
 ## Inputs
 
-- 1–10 photos of the item.
+- 1–20 photos of the item (Trade Me allows up to 20 per Marketplace listing).
 - One-line brief: `"selling my old Specialized Sirrus bike, has some scratches on the frame, includes lights"`.
 - Optionally: a Trade Me category if you already know it, your preferred postage option, a reserve price.
 
@@ -79,10 +79,10 @@ Bikes are expensive to ship — most Trade Me buyers will collect.
 
 ## Trade Me-specific niceties
 
-- **Buyer Protection** applies if you accept payment via the Trade Me cart — keep payment in-app for >$100 items.
+- **Buyer Protection** applies when the buyer pays via Ping or Afterpay — covers them up to $5,000 if the item doesn't arrive, isn't as described, or arrives broken. Keep payment in-app to stay covered.
 - **Reserve auctions vs Buy Now** — the skill suggests but doesn't decide. For unique items reserve is fine; for commodities Buy Now sells faster.
-- **Ping** — Trade Me's escrow-style payment system. Mentioned in the listing if it's available for your category.
-- **Sucessful Trade fees** — you can mention "GST receipt available" if you're a GST-registered seller. Otherwise leave it out.
+- **Ping** — Trade Me's in-app card payment system (a virtual wallet). Mentioned in the listing if it's available for your category.
+- **Selling fees** — from 10 March 2026 Trade Me dropped the 7.9% success fee for casual sellers on Marketplace (general items list for free; buyers pay a small service fee instead). In-trade sellers still pay success fees. You can mention "GST receipt available" if you're a GST-registered seller; otherwise leave it out.
 
 ## Tone
 

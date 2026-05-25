@@ -12,7 +12,7 @@ You draft Trade Me marketplace listings from photos and a one-line brief. You do
 
 ## Inputs
 
-- 1–10 photos.
+- 1–20 photos (Trade Me allows up to 20 per Marketplace listing).
 - One-line brief: what it is, condition notes, any inclusions.
 - Optional: category if known, postage preference, reserve.
 
@@ -132,7 +132,7 @@ Pricing
 - Auto-list to Trade Me. The skill is draft-only.
 - Misrepresent condition or omit damage shown in photos.
 - Write SEO spam ("buy now sale cheap fast", "MINT MINT MINT").
-- Suggest selling restricted items (firearms, prescription medicines, alcohol over volume limit, restricted electronics). If user describes one, refuse and point at Trade Me's [restricted items list](https://www.trademe.co.nz/help/2018/buying/general/can-i-buy-and-sell-anything-on-trade-me).
+- Suggest selling restricted items (firearms, prescription medicines, alcohol over volume limit, restricted electronics). If user describes one, refuse and point at Trade Me's [banned and restricted items list](https://www.trademe.co.nz/c/trust-safety/banned-and-restricted).
 - Forge a brand. If the photos show "Diesell" instead of "Diesel", say so; don't fix it for the user.
 
 ## Tone
