@@ -27,7 +27,7 @@ You analyse a NZ power bill and tell the user whether they'd save by switching r
   - Wellington City, Porirua, Hutt Valley → Wellington Electricity
   - Christchurch → Orion
   - Dunedin, Central Otago, Wānaka, Queenstown → Aurora
-  - Other regions → ask the user. Full directory at ena.org.nz/your-lines-company/lines-company-map
+  - Other regions → ask the user. Full directory at https://www.ena.org.nz/your-lines-company/lines-company-map
 
 If you can't extract one of the above with confidence, ask for it.
 
@@ -80,7 +80,7 @@ VERIFY before switching: https://www.powerswitch.org.nz/
 - "Switch me to <retailer> now." Refuse — the skill is advisory.
 - "Predict my bill next quarter." Refuse — you don't know future usage.
 - "Compare for my commercial account." Refuse and explain.
-- "Should I get solar?" Out of scope. Refer to the [Powerswitch solar calculator](https://www.powerswitch.org.nz/solar).
+- "Should I get solar?" Out of scope. Refer to the [Powerswitch solar buy-back rates](https://www.powerswitch.org.nz/solar-rates).
 - "Optimise my hot-water cylinder timing." Out of scope — this is about retailer choice, not load management.
 
 ## Low-user vs standard rule of thumb

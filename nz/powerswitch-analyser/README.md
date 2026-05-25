@@ -30,7 +30,7 @@ Then it compares to a **snapshot** of retailer pricing and produces a ranked lis
 ## When NOT to use it
 
 - For commercial accounts. Out of scope.
-- For solar/battery analysis. Out of scope (see Powerswitch's solar-specific calculator).
+- For solar/battery analysis. Out of scope (see Powerswitch's solar buy-back rates page).
 - For predicting your future bills if usage changes significantly.
 - For deciding between gas + electric vs all-electric whole-home. Different question.
 
@@ -57,8 +57,8 @@ Comparison vs your current plan
 Plan                              Annualised  vs you     Friction
 Electric Kiwi MoveMaster          $2,510      −$330      No exit fee, switch in app
 Flick Off-peak Saver              $2,580      −$260      Variable rates; requires smart meter
-Genesis Standard                  $2,790      −$50       (your current — no switch needed)
-Mercury GoodNights                $2,830      +£10       —
+Genesis Standard (current)        $2,840      —          (your current — no switch needed)
+Mercury GoodNights                $2,830      −$10       —
 Contact Basic                     $2,930      +$90       —
 
 Top recommendation

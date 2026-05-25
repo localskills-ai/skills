@@ -14,8 +14,8 @@ heavily on:
 A switch that looks cheaper on consumption can be worse overall if the
 solar buy-back rate drops.
 
-For solar-specific analysis use Powerswitch's solar calculator:
-https://www.powerswitch.org.nz/solar
+For solar-specific analysis use Powerswitch's solar buy-back rates:
+https://www.powerswitch.org.nz/solar-rates
 
 Happy to compare consumption-only plans if you want a rough sanity
 check, but please don't switch on the strength of that alone for a

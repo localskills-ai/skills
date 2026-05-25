@@ -1,7 +1,7 @@
 {
   "name": "powerswitch-analyser",
   "displayName": "Powerswitch Analyser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Analyses your NZ power bill and tells you if a different retailer would be cheaper. Uses Consumer NZ's Powerswitch logic locally.",
   "longDescription": "Reads your power bill (PDF or pasted text), extracts your usage profile (daily charge, kWh totals, peak/off-peak split if applicable, lines company), and compares against a static snapshot of NZ power retailer plans. Tells you which retailers would likely be cheaper for your usage, by how much annually, and what the switching friction is. Encourages you to verify on Powerswitch.org.nz before switching. Does not switch on your behalf.",
   "creator": {
