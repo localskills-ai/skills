@@ -4,10 +4,10 @@
     "name": "resource-consent-checker",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-25T03:47:39.259Z",
+  "auditedAt": "2026-05-25T05:25:53.779Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass",
   "checks": [
@@ -16,15 +16,20 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:eab72ab9ae0b4736cb57100ac1677e05bc02a1fc7a3d1e67544297356e0c7621",
+    "CHANGELOG.md": "sha256:1b42616d903bc53f8fdb7903ed1f50b44bdf2eb3b293f7800123142494042d85",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:cd2ef7176b7ee9ebbfb3be05af19b32cf3fed96fd5ae53d37824b2bc19157cd1",
     "SKILL.md": "sha256:04d611c446e351c8c97ae59448f83b3da5732da7e9317231948ac6d268ac1422",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:1b42616d903bc53f8fdb7903ed1f50b44bdf2eb3b293f7800123142494042d85"
+    "examples/01-simple-deck.md": "sha256:b2f0cdde2047d6a12599db8aca0134d5f837f32d77b8fada3422cea7361ac16a",
+    "examples/02-retaining-wall.md": "sha256:11470085c83f84c8b4c7996ae1dc5cc37dfd1a58d1309a28fcad60437957d38d",
+    "skill.json": "sha256:eab72ab9ae0b4736cb57100ac1677e05bc02a1fc7a3d1e67544297356e0c7621"
   }
 }

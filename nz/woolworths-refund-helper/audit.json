@@ -4,10 +4,10 @@
     "name": "woolworths-refund-helper",
     "version": "1.0.3"
   },
-  "auditedAt": "2026-05-25T03:34:58.934Z",
+  "auditedAt": "2026-05-25T05:25:53.785Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass-with-warnings",
   "checks": [
@@ -16,20 +16,30 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [
     {
       "check": "undeclared-network",
       "message": "SKILL.md: references \"www.woolworths.co.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/01-spoiled-strawberries.md: references \"www.woolworths.co.nz\" which is not in permissions.network"
     }
   ],
   "hashes": {
-    "skill.json": "sha256:b28fd64cebc224f198d78535ec6a051c8eaca39074e5110e32e3fad6a086aebd",
+    "CHANGELOG.md": "sha256:7eb9f420ba884ba0b0269f7872d97d3b23e6d61dbe819643d47e180d6a88dd4e",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:8c79af9c43c12f002ffd290d957ebd0274b213349462e31c2294f08e57211c65",
     "SKILL.md": "sha256:6a5eec052b06229a8b842fcb878a370f9a7b15108fda33bf67066bb2b30733a3",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:7eb9f420ba884ba0b0269f7872d97d3b23e6d61dbe819643d47e180d6a88dd4e"
+    "examples/01-spoiled-strawberries.md": "sha256:5d940a01803951159c1fdf4a87ef3895e53bd09e8fa6d5074ea8b8bde3b33a4c",
+    "examples/02-missing-items.md": "sha256:91ff2cfd1aba30253a5e49080f33f701ec42de7ca2688e0a141942405799b7be",
+    "examples/03-refusal-change-of-mind.md": "sha256:d04e53ec6fd878b85850e539056d747e3de5793cff8ed6efc77862324f8bc390",
+    "skill.json": "sha256:b28fd64cebc224f198d78535ec6a051c8eaca39074e5110e32e3fad6a086aebd"
   }
 }

@@ -4,10 +4,10 @@
     "name": "trademe-listing-drafter",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-25T03:47:39.261Z",
+  "auditedAt": "2026-05-25T05:25:53.782Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass",
   "checks": [
@@ -16,15 +16,20 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:bb918b49c8db2fac6c8b8bd1705afeed61b91fa0e05ed2de75b70fed6fa4ddcb",
+    "CHANGELOG.md": "sha256:4ae1b9877aa1cfeb2f3c7b768fea3d4942f83b23ac3b3c001958f5dea6e61059",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:df840ff9ae3f723f47a492b1eaed8d57b1158b6a9710642153a25ca5f0ad07d7",
     "SKILL.md": "sha256:7fb4bb61c698a9d7b394d7ebc35400d3ba09c70843aeca45b028ff21188191ac",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:4ae1b9877aa1cfeb2f3c7b768fea3d4942f83b23ac3b3c001958f5dea6e61059"
+    "examples/01-second-hand-bike.md": "sha256:37eabf91846f768f628381f20c3a3dd198bff0684cf871dd3897996802ad58fb",
+    "examples/02-tea-set.md": "sha256:a08dc1577b1fddd2d38ca1c270410223024b516fc6476efecc8fc2a383a9621e",
+    "skill.json": "sha256:bb918b49c8db2fac6c8b8bd1705afeed61b91fa0e05ed2de75b70fed6fa4ddcb"
   }
 }

@@ -4,27 +4,41 @@
     "name": "companies-office-annual-return",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T03:47:39.243Z",
+  "auditedAt": "2026-05-25T05:25:53.754Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
-  "result": "pass",
+  "result": "pass-with-warnings",
   "checks": [
     "required-files",
     "schema",
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "check": "undeclared-network",
+      "message": "examples/01-solo-shareholder.md: references \"www.companiesoffice.govt.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/02-with-changes.md: references \"www.companiesoffice.govt.nz\" which is not in permissions.network"
+    }
+  ],
   "hashes": {
-    "skill.json": "sha256:d811a81397eba889c39e9398f75a206978f5e02b847f92b6f83055ea8600e5b9",
+    "CHANGELOG.md": "sha256:892527a58ee58bf342c606a96b033e26e4e992268657722f2be01a8598b0383f",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:d2f4e9ca50c5fd96640ad29ea2cd7c538134e314015ece8be5c2dfbf9c681bbe",
     "SKILL.md": "sha256:780f8552588ec05e96da251e93bb08392658300ff6dab7b703d07d5b958ec352",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:892527a58ee58bf342c606a96b033e26e4e992268657722f2be01a8598b0383f"
+    "examples/01-solo-shareholder.md": "sha256:60b1ddce36d538180c9ac1a519a6a83428a2495182a7a5c2ef8a6564c2cbcf28",
+    "examples/02-with-changes.md": "sha256:9a83f24a882c6a0fccd7b4872de7e7e10a215936f365e64fcc6469ea0d430fc9",
+    "skill.json": "sha256:d811a81397eba889c39e9398f75a206978f5e02b847f92b6f83055ea8600e5b9"
   }
 }

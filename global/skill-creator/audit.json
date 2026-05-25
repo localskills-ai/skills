@@ -4,10 +4,10 @@
     "name": "skill-creator",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T03:50:46.756Z",
+  "auditedAt": "2026-05-25T05:25:53.747Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass",
   "checks": [
@@ -16,15 +16,20 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [],
   "hashes": {
-    "skill.json": "sha256:8b0682c511b98d5a92ce969f896f4b6630249df271e9718970346f09496f1cf9",
+    "CHANGELOG.md": "sha256:36e6371f2d89973f544ea6582307e0cf965b2c1e93699b633881e6b31d4223e9",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:4faa9c25e3d48f1009ef86adf30b9bce7999dd8e604129d63f9de7ffdc5e3713",
     "SKILL.md": "sha256:5f3f99e5f0fbe81f4ab0e9a134685254b540f2ff850b01fa63f16b790e20b84d",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:36e6371f2d89973f544ea6582307e0cf965b2c1e93699b633881e6b31d4223e9"
+    "examples/01-with-computer-use.md": "sha256:fc7c431441983efbaec830399f96806f347b0b0a2c6b502fc789dfc8932aaaa7",
+    "examples/02-refusal-policy-violating.md": "sha256:bf25139e62010cca8fc6ef992cf1c8165ca1dcb638ea2a9b54d8f08b309b90a6",
+    "skill.json": "sha256:8b0682c511b98d5a92ce969f896f4b6630249df271e9718970346f09496f1cf9"
   }
 }

@@ -4,10 +4,10 @@
     "name": "mymsd-form-helper",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-25T03:47:39.250Z",
+  "auditedAt": "2026-05-25T05:25:53.765Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass-with-warnings",
   "checks": [
@@ -16,20 +16,33 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [
     {
       "check": "undeclared-network",
       "message": "SKILL.md: references \"my.msd.govt.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/01-redundancy-jobseeker.md: references \"my.msd.govt.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/02-refusal-misrepresent.md: references \"communitylaw.org.nz\" which is not in permissions.network"
     }
   ],
   "hashes": {
-    "skill.json": "sha256:19d5ac46fdea96713c38c02645beef08319723f63a09350b019224880a861913",
+    "CHANGELOG.md": "sha256:4124b0c2ab5c9825f855b3ba18ad5ad44e3467b4a9302ee46c951fb0bd409760",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:9c813385a4b78e895ecb22a2122f5b0773cbcc0f965481f4aa477b25f730d14e",
     "SKILL.md": "sha256:8bdfd716680bcd482f127f256e3adb920cadf17e62f99cf37dbbd251ccb9f038",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:4124b0c2ab5c9825f855b3ba18ad5ad44e3467b4a9302ee46c951fb0bd409760"
+    "examples/01-redundancy-jobseeker.md": "sha256:09665ab5481b3c26c428be6354563cf7848418da5ea9299d1eef6410deb291e9",
+    "examples/02-refusal-misrepresent.md": "sha256:c4ada1d6ff893815b2099ce3041a35d20af790bac6d068b38af3409996202ca8",
+    "skill.json": "sha256:19d5ac46fdea96713c38c02645beef08319723f63a09350b019224880a861913"
   }
 }

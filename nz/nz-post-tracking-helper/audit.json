@@ -4,10 +4,10 @@
     "name": "nz-post-tracking-helper",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T03:47:39.252Z",
+  "auditedAt": "2026-05-25T05:25:53.768Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass-with-warnings",
   "checks": [
@@ -16,7 +16,10 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [
@@ -26,10 +29,12 @@
     }
   ],
   "hashes": {
-    "skill.json": "sha256:a0c161b5ffcae15aa96970bd32e099cd954cbf0a524098f929d034d085b3eeb2",
+    "CHANGELOG.md": "sha256:769fb9b951a1457aee521137a0ab10303d62ad58856b4bc44fef3facb85743dd",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:115f0aa9bfdb08517d6cf51db1efaa40e791838624f545a2822469065c4a89b5",
     "SKILL.md": "sha256:835e222c42492a11e8e40216d93f659238bcdc6edf2c6a32c45a3bdee96d7be4",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:769fb9b951a1457aee521137a0ab10303d62ad58856b4bc44fef3facb85743dd"
+    "examples/01-flagged-delay.md": "sha256:c352c2e5e647857316de64f4efda545d308fdb6e108f8a6f001d52f48322daf5",
+    "examples/02-return-to-sender.md": "sha256:5afad67702b002dd1446778fead9519a9c75d315bdec3e916e60c6d544f79db1",
+    "skill.json": "sha256:a0c161b5ffcae15aa96970bd32e099cd954cbf0a524098f929d034d085b3eeb2"
   }
 }

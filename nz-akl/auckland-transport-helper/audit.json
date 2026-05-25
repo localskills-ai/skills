@@ -4,10 +4,10 @@
     "name": "auckland-transport-helper",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T03:47:39.239Z",
+  "auditedAt": "2026-05-25T05:25:53.789Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass-with-warnings",
   "checks": [
@@ -16,20 +16,33 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [
     {
       "check": "undeclared-network",
       "message": "README.md: references \"at.govt.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/01-overcharge.md: references \"at.govt.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/02-lost-card.md: references \"at.govt.nz\" which is not in permissions.network"
     }
   ],
   "hashes": {
-    "skill.json": "sha256:cc124ce1f515c4421e6dcb19a39de8faed8d140193f5782ec21ae2f35024cc68",
+    "CHANGELOG.md": "sha256:8e3f58decc48aabae12ea50cd3bdfef7c90306ff7b4e8b7454c65d74916ef6dc",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:f6f354b27ea603db24fc9f4b0ebc680a5ec5edfe0c157907e2b66f3f1f2aebf7",
     "SKILL.md": "sha256:423122f5fbf71cc5b2befb202705a90a7ea8d822c7bdcf28077c52cd33066c08",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:8e3f58decc48aabae12ea50cd3bdfef7c90306ff7b4e8b7454c65d74916ef6dc"
+    "examples/01-overcharge.md": "sha256:b7c789751182ed2b26ba8260e72c6d711c873ed95bc81c3b4f230beea2ff56de",
+    "examples/02-lost-card.md": "sha256:c45c08e41c1a51ca04f44086b0de47ee906701081aa5193963ba75969381324b",
+    "skill.json": "sha256:cc124ce1f515c4421e6dcb19a39de8faed8d140193f5782ec21ae2f35024cc68"
   }
 }

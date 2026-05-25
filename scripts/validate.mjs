@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..");
-const VALIDATOR_VERSION = "0.2.0";
+const VALIDATOR_VERSION = "0.3.0";
 
 // ---------------------------------------------------------------------------
 // Schema (kept aligned with /site/src/lib/skill-schema.ts).
@@ -396,6 +396,93 @@ function scanUndeclaredNetwork(text, declared, sourceLabel, issues) {
 }
 
 // ---------------------------------------------------------------------------
+// Supply-chain / agent-poisoning behavior. Unlike the markdown malicious-code
+// scan, these run over the FULL text (prose AND code) of every file — in a
+// skill the dangerous instruction is usually plain English ("now run ..."),
+// not a fenced block. Modeled on real attacks like the May 2026
+// npm/PyPI/crates "TrapDoor" crypto-stealer: remote fetch-and-execute,
+// persistence, and poisoning of other agents' instruction files.
+// ---------------------------------------------------------------------------
+
+// Pull a remote payload and feed it straight to an interpreter / eval it.
+const REMOTE_EXEC_PATTERNS = [
+  {
+    name: "pipe-to-interpreter",
+    re: /\b(curl|wget|fetch|iwr|invoke-webrequest)\b[^\n|]*\|\s*(sudo\s+)?(sh|bash|zsh|dash|node|deno|bun|python3?|ruby|perl|php|pwsh)\b/i,
+  },
+  {
+    name: "inline-remote-eval",
+    re: /\b(node|deno|bun)\s+-e\b|\bpython3?\s+-c\b|\b(iex|invoke-expression)\b|\beval\s*\(\s*(await\s+)?(fetch|require)\s*\(\s*['"`]https?:/i,
+  },
+  {
+    name: "download-then-run",
+    re: /\b(curl|wget)\b[^\n]*\s-o\s[^\n]*&&[^\n]*\b(sh|bash|node|python3?|chmod\s+\+x)\b/i,
+  },
+];
+
+// Establish persistence or poison another agent/tool's instruction files.
+const PERSISTENCE_PATTERNS = [
+  {
+    name: "shell-startup-write",
+    re: /(>>|\btee\b|\bcat\s*>|\becho\b[^\n]*>)\s*[^\n]*(\.bashrc|\.zshrc|\.bash_profile|\.zprofile|\.profile)/i,
+  },
+  {
+    name: "cron-or-service",
+    re: /\bcrontab\s+-|\/etc\/cron|\blaunchctl\s+load\b|\bsystemctl\s+(--user\s+)?enable\b|\/LaunchAgents\//i,
+  },
+  {
+    name: "git-hook-write",
+    re: /(>>|\btee\b|\bcp\b|\bcat\s*>|\becho\b[^\n]*>)\s*[^\n]*\.git\/hooks\//i,
+  },
+  {
+    name: "ssh-key-write",
+    re: /(>>|\btee\b|\becho\b[^\n]*>)\s*[^\n]*\.ssh\/(authorized_keys|id_[a-z0-9]+)/i,
+  },
+  {
+    name: "agent-config-poisoning",
+    re: /(>>|\btee\b|\bcp\b|\bcat\s*>|\becho\b[^\n]*>|append[^\n]{0,20}to\b)[^\n]*(CLAUDE\.md|AGENTS\.md|\.cursorrules|\.cursor\/rules|\.windsurfrules|copilot-instructions)/i,
+  },
+];
+
+// Reading high-value secret stores — the exact targets of credential stealers.
+// Warn (human review) rather than hard-fail: occasionally legitimate.
+const SENSITIVE_PATH_PATTERNS = [
+  {
+    name: "cloud-credentials",
+    re: /\/\.aws\/credentials\b|\/\.config\/gcloud\b|\/\.kube\/config\b|\/\.docker\/config\.json\b|\bnpmrc\b[^\n]*_authToken/i,
+  },
+  {
+    name: "private-keys",
+    re: /\/\.ssh\/id_[a-z0-9]+|\bid_rsa\b|\/\.gnupg\//i,
+  },
+  {
+    name: "wallet-keystore",
+    re: /\b(wallet\.dat|keystore|UTC--[0-9])\b|solana\/id\.json|\.sui\/sui_config|aptos[^\n]*key|MetaMask/i,
+  },
+  {
+    name: "browser-secrets",
+    re: /\bLogin Data\b|\bcookies\.sqlite\b|Local Storage\/leveldb|\bkey4\.db\b/i,
+  },
+];
+
+function scanGroup(patterns, text, label, check, severity, issues) {
+  for (const { name, re } of patterns) {
+    if (re.test(text)) {
+      issues[severity](check, `${label}: matched "${name}"`);
+    }
+  }
+}
+
+// Runs over the WHOLE file (prose + code) — the risky instruction in a skill
+// is usually plain English, not a fenced code block.
+function scanForDangerousBehavior(text, label, issues) {
+  if (!text) return;
+  scanGroup(REMOTE_EXEC_PATTERNS, text, label, "remote-exec", "error", issues);
+  scanGroup(PERSISTENCE_PATTERNS, text, label, "persistence", "error", issues);
+  scanGroup(SENSITIVE_PATH_PATTERNS, text, label, "sensitive-paths", "warn", issues);
+}
+
+// ---------------------------------------------------------------------------
 // Per-skill validator
 // ---------------------------------------------------------------------------
 
@@ -430,20 +517,22 @@ async function validateSkill(skillDir) {
     );
   }
 
-  // 4. Prompt-injection + malicious-code scan on SKILL.md and README.md.
-  const sources = [
-    ["SKILL.md", await tryRead(path.join(skillDir, "SKILL.md"))],
-    ["README.md", await tryRead(path.join(skillDir, "README.md"))],
-  ];
-  for (const [label, text] of sources) {
-    scanForPromptInjection(text, label, issues);
-    scanForMaliciousCode(text, label, issues);
-    scanUndeclaredNetwork(text, manifest.permissions?.network, label, issues);
+  // 4. Security scans over EVERY file in the skill (prose AND code) — a
+  //    payload can hide in examples/ or any supporting file, not just
+  //    SKILL.md / README.md.
+  const files = await listSkillFiles(skillDir);
+  for (const rel of files) {
+    const text = await tryRead(path.join(skillDir, rel));
+    if (!isProbablyText(text)) continue;
+    scanForPromptInjection(text, rel, issues);
+    scanForMaliciousCode(text, rel, issues);
+    scanForDangerousBehavior(text, rel, issues);
+    scanUndeclaredNetwork(text, manifest.permissions?.network, rel, issues);
   }
 
-  // 5. Compute SHA256 of each tracked file in the skill directory.
-  //    Used both for tamper-detection and as a key for cache invalidation.
-  issues.hashes = await hashTrackedFiles(skillDir);
+  // 5. Hash EVERY file (except the generated audit.json) for tamper-evidence,
+  //    so supporting files can't ship or mutate unaudited.
+  issues.hashes = await hashAllFiles(skillDir, files);
 
   // 6. Snyk Agent Scan hook (deferred). When SNYK_TOKEN is set in env, this
   //    is where we'd shell out to `snyk-agent-scan` and merge its findings.
@@ -452,26 +541,45 @@ async function validateSkill(skillDir) {
   return issues;
 }
 
-const HASHED_FILES = [
-  "skill.json",
-  "README.md",
-  "SKILL.md",
-  "LICENSE",
-  "CHANGELOG.md",
-];
-
-async function hashTrackedFiles(skillDir) {
-  const out = {};
-  for (const f of HASHED_FILES) {
-    try {
-      const buf = await readFile(path.join(skillDir, f));
-      const hash = createHash("sha256").update(buf).digest("hex");
-      out[f] = `sha256:${hash}`;
-    } catch {
-      // missing file is already flagged by required-files; skip from hashes.
+// Recursively list a skill's files as paths relative to its dir. Skips the
+// generated audit.json and dotfiles (.DS_Store etc.).
+async function listSkillFiles(skillDir, sub = "") {
+  const out = [];
+  let entries;
+  try {
+    entries = await readdir(path.join(skillDir, sub), { withFileTypes: true });
+  } catch {
+    return out;
+  }
+  for (const ent of entries) {
+    if (ent.name.startsWith(".")) continue;
+    const rel = sub ? `${sub}/${ent.name}` : ent.name;
+    if (ent.isDirectory()) {
+      out.push(...(await listSkillFiles(skillDir, rel)));
+    } else if (ent.isFile() && rel !== "audit.json") {
+      out.push(rel);
     }
   }
   return out;
+}
+
+// Hash EVERY file in the skill (sorted for stable output) so supporting files
+// can't ship or mutate unaudited — not just the five "required" ones.
+async function hashAllFiles(skillDir, files) {
+  const out = {};
+  for (const rel of [...files].sort()) {
+    try {
+      const buf = await readFile(path.join(skillDir, rel));
+      out[rel] = `sha256:${createHash("sha256").update(buf).digest("hex")}`;
+    } catch {
+      // race / unreadable — skip.
+    }
+  }
+  return out;
+}
+
+function isProbablyText(s) {
+  return typeof s === "string" && !s.includes("\u0000");
 }
 
 /**
@@ -504,6 +612,9 @@ async function writeAudit(skillDir, issues, manifest) {
       "prompt-injection",
       "malicious-code",
       "undeclared-network",
+      "remote-exec",
+      "persistence",
+      "sensitive-paths",
     ],
     errors: issues.errors,
     warnings: issues.warnings,

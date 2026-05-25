@@ -4,10 +4,10 @@
     "name": "ird-gst-return-helper",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T03:47:39.248Z",
+  "auditedAt": "2026-05-25T05:25:53.762Z",
   "validator": {
     "name": "localskills-validate",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "result": "pass-with-warnings",
   "checks": [
@@ -16,20 +16,29 @@
     "permissions-scope",
     "prompt-injection",
     "malicious-code",
-    "undeclared-network"
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
   ],
   "errors": [],
   "warnings": [
     {
       "check": "undeclared-network",
       "message": "SKILL.md: references \"myir.ird.govt.nz\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "examples/01-simple-sole-trader.md: references \"myir.ird.govt.nz\" which is not in permissions.network"
     }
   ],
   "hashes": {
-    "skill.json": "sha256:6fb33634a67946003bddb61592c0092a5df80f985e7bb4bc7ac821bdee0b5f86",
+    "CHANGELOG.md": "sha256:79aa28ea9be6f5aa2a0bafa3643d50667c922fd54099de8547719a35700b7f8b",
+    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:c6c37f86e341dfcb38f82f48a88969a3dcc72aa66a41e30549428566591b9e10",
     "SKILL.md": "sha256:f19fce48f121d764ac885e03710f1726a07d103b97e61113b4718cc476054bae",
-    "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
-    "CHANGELOG.md": "sha256:79aa28ea9be6f5aa2a0bafa3643d50667c922fd54099de8547719a35700b7f8b"
+    "examples/01-simple-sole-trader.md": "sha256:5f8689234bfdf7acdcff4619745f2891f216253bf38b4870ac72d6e392e20423",
+    "examples/02-with-zero-rated-export.md": "sha256:b496ec3bf7d496b0689d08288f21fc9f7b649afa245c0e42bb6d9d709fa0a779",
+    "skill.json": "sha256:6fb33634a67946003bddb61592c0092a5df80f985e7bb4bc7ac821bdee0b5f86"
   }
 }
