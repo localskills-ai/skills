@@ -1,7 +1,7 @@
 {
   "name": "skill-creator",
   "displayName": "Skill Creator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Co-pilots a real task with you (Computer Use), then generates a complete Localskills.ai skill folder from the workflow it just ran.",
   "longDescription": "The meta-skill. Install into Claude Desktop with Computer Use, open the target service on one side of your screen and Claude on the other, then pick a mode — dictation (you tell Claude each step, Claude executes) or autopilot (Claude attempts the task, you correct it). Either way, by the end Claude has actually performed the task once and writes the SKILL.md from first-hand knowledge, not abstract description. Identifies the target interface (chatbot, portal, app), extracts operating rules and refusal cases from the live run, and outputs a complete skill folder (skill.json, SKILL.md, README, CHANGELOG, 2+ examples) validated against the Localskills schema before handoff.",
   "creator": {

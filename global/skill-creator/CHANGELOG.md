@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] — 2026-05-25
+
+### Fixed
+
+- Updated the Woolworths order-number example from `WW1234567` to `CD1234567` (SKILL.md and README) so the walkthrough matches the corrected Woolworths Refund Helper — Woolworths NZ order numbers keep the legacy Countdown `CD` prefix.
+
 ## [1.0.1] — 2026-05-21
 
 ### Changed

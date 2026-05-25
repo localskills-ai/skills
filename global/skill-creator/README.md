@@ -48,7 +48,7 @@ The skill asks:
 
 If you have Computer Use, pick one of two modes:
 
-- **Dictation mode** — You tell Claude what to do, step by step: "Open the Woolworths app", "Click the chat icon", "Tell Olive my order number is WW1234567". Claude executes each step via Computer Use. You correct it when it goes wrong; you explain the reasoning when it's not obvious. Best when the workflow has non-obvious decision points you want to teach explicitly.
+- **Dictation mode** — You tell Claude what to do, step by step: "Open the Woolworths app", "Click the chat icon", "Tell Olive my order number is CD1234567". Claude executes each step via Computer Use. You correct it when it goes wrong; you explain the reasoning when it's not obvious. Best when the workflow has non-obvious decision points you want to teach explicitly.
 - **Autopilot mode** — You tell Claude the goal ("Get a refund for the spoiled strawberries"). Claude attempts the task autonomously: figures out which app to open, how to navigate, what to type. You watch and correct: "No, don't click that — use the chat icon instead". Best when you want to see what Claude would do unsupervised, and refine from there.
 
 Either way, by the end Claude has actually completed the task and can draft the SKILL.md from first-hand knowledge, not abstract description. After the task ends, Claude asks ~3–5 clarifying questions to capture anything that didn't come up naturally during execution.

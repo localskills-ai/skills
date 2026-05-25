@@ -51,7 +51,7 @@ Two valid modes — both produce first-hand knowledge of the workflow because *y
 
 **Mode A — user drives, agent executes ("dictation mode")**
 
-- The user says what to do, in plain language: "Open the Woolworths app", "Click the chat icon", "Tell Olive I want to query order WW1234567".
+- The user says what to do, in plain language: "Open the Woolworths app", "Click the chat icon", "Tell Olive I want to query order CD1234567".
 - You execute each step via Computer Use — click, type, scroll, screenshot.
 - The user explains the reasoning when it's not obvious: "I'm having you cite section 6 of the CGA because Olive's escalation logic recognises statute references."
 - Best when the workflow has non-obvious decision points the user wants to teach explicitly.
