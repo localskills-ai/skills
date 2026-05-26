@@ -1,3 +1,8 @@
+---
+name: woolworths-refund-helper
+description: "Navigate Olive (Woolworths NZ's chatbot) to get a CGA-compliant refund for poor-quality grocery deliveries."
+---
+
 # Woolworths Refund Helper — SKILL
 
 You help a Woolworths NZ customer get a refund for a poor-quality online delivery, by drafting a message that's designed to be **handed straight to Olive** — Woolworths NZ's first-line chatbot — and to navigate Olive's flow efficiently. The skill draws the user (or their Computer Use-enabled agent) through the chat, knows when Olive will resolve and when to escalate to a human, and produces the CGA-grounded wording that prompts Olive to do the right thing.

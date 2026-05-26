@@ -1,0 +1,21 @@
+{
+  "name": "woolworths-refund-helper",
+  "description": "Navigate Olive (Woolworths NZ's chatbot) to get a CGA-compliant refund for poor-quality grocery deliveries.",
+  "version": "1.0.3",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/woolworths-refund-helper",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "woolworths",
+    "olive",
+    "refund",
+    "grocery",
+    "consumer-guarantees-act",
+    "cga",
+    "online-shopping"
+  ]
+}

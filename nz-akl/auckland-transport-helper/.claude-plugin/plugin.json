@@ -1,0 +1,20 @@
+{
+  "name": "auckland-transport-helper",
+  "description": "Helps with AT HOP card, journey planning, fare disputes, and the AT Mobile / website friction points.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://localskills.ai/nz-akl/auckland-transport-helper",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "at-hop",
+    "auckland-transport",
+    "public-transport",
+    "bus",
+    "train",
+    "ferry"
+  ]
+}

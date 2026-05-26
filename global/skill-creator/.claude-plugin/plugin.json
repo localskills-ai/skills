@@ -1,0 +1,20 @@
+{
+  "name": "skill-creator",
+  "description": "Co-pilots a real task with you (Computer Use), then generates a complete Localskills.ai skill folder from the workflow it just ran.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Localskills",
+    "url": "https://localskills.ai"
+  },
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/global/skill-creator",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "meta",
+    "authoring",
+    "scaffold",
+    "computer-use",
+    "contributor",
+    "onboarding"
+  ]
+}

@@ -4,7 +4,7 @@
     "name": "companies-office-annual-return",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T05:25:53.754Z",
+  "auditedAt": "2026-05-26T04:16:18.705Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.3.0"
@@ -36,7 +36,7 @@
     "CHANGELOG.md": "sha256:892527a58ee58bf342c606a96b033e26e4e992268657722f2be01a8598b0383f",
     "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:d2f4e9ca50c5fd96640ad29ea2cd7c538134e314015ece8be5c2dfbf9c681bbe",
-    "SKILL.md": "sha256:780f8552588ec05e96da251e93bb08392658300ff6dab7b703d07d5b958ec352",
+    "SKILL.md": "sha256:2ca4d0910b6aacf5933079548427cb167c56e9d3f43f9f4711a558c6aa1fd39a",
     "examples/01-solo-shareholder.md": "sha256:60b1ddce36d538180c9ac1a519a6a83428a2495182a7a5c2ef8a6564c2cbcf28",
     "examples/02-with-changes.md": "sha256:9a83f24a882c6a0fccd7b4872de7e7e10a215936f365e64fcc6469ea0d430fc9",
     "skill.json": "sha256:d811a81397eba889c39e9398f75a206978f5e02b847f92b6f83055ea8600e5b9"

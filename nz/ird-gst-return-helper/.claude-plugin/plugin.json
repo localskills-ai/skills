@@ -1,0 +1,20 @@
+{
+  "name": "ird-gst-return-helper",
+  "description": "Drafts NZ IRD GST returns from receipts and invoices. Computes Box 5–15 figures for the GST101A. Does not file.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/ird-gst-return-helper",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "ird",
+    "gst",
+    "myir",
+    "small-business",
+    "accounting",
+    "tax-return"
+  ]
+}

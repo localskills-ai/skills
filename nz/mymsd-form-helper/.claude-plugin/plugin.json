@@ -1,0 +1,20 @@
+{
+  "name": "mymsd-form-helper",
+  "description": "Helps you fill in NZ MSD (Work & Income) forms for benefits, accommodation supplement, and reviews. Drafts only — you submit.",
+  "version": "1.0.1",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://localskills.ai/nz/mymsd-form-helper",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "msd",
+    "winz",
+    "mymsd",
+    "benefits",
+    "jobseeker",
+    "accommodation-supplement"
+  ]
+}

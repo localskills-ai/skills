@@ -1,0 +1,20 @@
+{
+  "name": "nz-post-tracking-helper",
+  "description": "Tracks NZ Post / CourierPost parcels from your tracking numbers and drafts returns labels and missing-parcel claims.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://localskills.ai/nz/nz-post-tracking-helper",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "nz-post",
+    "courierpost",
+    "tracking",
+    "returns",
+    "parcel",
+    "delivery"
+  ]
+}

@@ -4,7 +4,7 @@
     "name": "companies-register-search",
     "version": "1.0.1"
   },
-  "auditedAt": "2026-05-25T05:25:53.758Z",
+  "auditedAt": "2026-05-26T04:16:18.707Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.3.0"
@@ -27,7 +27,7 @@
     "CHANGELOG.md": "sha256:a0391c83112f5ab201da745a561f2a6166ebea880c18a6658fb50882c27ddee4",
     "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:11597ce98a227d2b610ea74f1a8a6c03514c98d4bb8c181f9681e91729d6dbbf",
-    "SKILL.md": "sha256:0a6927588d580185da0a20a88955bcb46a0832085a91729033aaf96c091aa622",
+    "SKILL.md": "sha256:2d23d2eb364d2c99d73ca2c2dd902862b1f1c01af73ca7c84d79279b163896d7",
     "examples/01-clean-supplier.md": "sha256:e97135a9482bbfbea1fca85467508fbf51b9bcb71564a4811c13c04c8528b97c",
     "examples/02-red-flags.md": "sha256:211104a6e3955a6c6d18ba9256bc359465990c87f6a23663ea997f84d03d4b1d",
     "skill.json": "sha256:bb7ffe9ef0ed2755ef2fed66d913199f81df48948664e337b6314b19893f2a47"

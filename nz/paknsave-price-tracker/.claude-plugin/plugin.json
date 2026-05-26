@@ -1,0 +1,20 @@
+{
+  "name": "paknsave-price-tracker",
+  "description": "Tracks PAK'nSAVE NZ shelf prices across your saved staples list and tells you when something jumps.",
+  "version": "1.0.1",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/paknsave-price-tracker",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "paknsave",
+    "groceries",
+    "price-tracking",
+    "budgeting",
+    "foodstuffs",
+    "cost-of-living"
+  ]
+}

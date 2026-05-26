@@ -1,0 +1,20 @@
+{
+  "name": "companies-office-annual-return",
+  "description": "Prepares your NZ Companies Office annual return — drafts the confirmation fields and flags anything that needs updating before you file.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://localskills.ai/nz/companies-office-annual-return",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "companies-office",
+    "annual-return",
+    "company-secretary",
+    "compliance",
+    "nzbn",
+    "directors"
+  ]
+}

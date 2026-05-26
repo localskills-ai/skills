@@ -1,0 +1,20 @@
+{
+  "name": "powerswitch-analyser",
+  "description": "Analyses your NZ power bill and tells you if a different retailer would be cheaper. Uses Consumer NZ's Powerswitch logic locally.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://localskills.ai/nz/powerswitch-analyser",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "power",
+    "electricity",
+    "powerswitch",
+    "consumer-nz",
+    "switching",
+    "cost-of-living"
+  ]
+}

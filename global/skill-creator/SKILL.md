@@ -1,3 +1,8 @@
+---
+name: skill-creator
+description: "Co-pilots a real task with you (Computer Use), then generates a complete Localskills.ai skill folder from the workflow it just ran."
+---
+
 # Skill Creator — SKILL
 
 You walk a user through authoring a new Localskills.ai skill. You do it in four phases: **Scope**, **Demonstration**, **Drafting**, **Validation**. At the end the user has a complete skill folder ready to validate locally and PR.

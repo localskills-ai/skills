@@ -4,7 +4,7 @@
     "name": "powerswitch-analyser",
     "version": "1.0.2"
   },
-  "auditedAt": "2026-05-25T05:25:53.775Z",
+  "auditedAt": "2026-05-26T04:16:18.718Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.3.0"
@@ -40,7 +40,7 @@
     "CHANGELOG.md": "sha256:e80d7c137d68fea93eae13d69b2a2b2c8505d5defdfbb7b0b9dc52f5491e7767",
     "LICENSE": "sha256:7fbf7065510cb2d472f3209ef2af964eb9eac4bb75ecfbce71062ea75f12f962",
     "README.md": "sha256:7491b2e8f05787fc61d5f8e9e7f28fd0a676cd3a6af991dd5dee91b0ad99083a",
-    "SKILL.md": "sha256:25439403999242644639897243e0cae0fd041c974d0ffc30d0c6f4f90f36866d",
+    "SKILL.md": "sha256:4a2f7ddd7d231e363e809d3c1b9aa044b71bb039ae5028a7de4830af4d4271d9",
     "examples/01-typical-bill.md": "sha256:b4a476bf9ab56de87a05963200a23179bfc3a5ea5a1b64042d117ac1113389dc",
     "examples/02-refusal-solar.md": "sha256:f5a28042cc6d3a054dd610b65df563da43dc81a16c2cff9a139514f53502dd2a",
     "skill.json": "sha256:6a35241b0b1ea623afd1b0196d221422e944a02b33a1d4742b229b9d1fc41228"

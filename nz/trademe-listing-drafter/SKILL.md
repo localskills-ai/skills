@@ -1,3 +1,8 @@
+---
+name: trademe-listing-drafter
+description: "Drafts a complete Trade Me marketplace listing from photos and a one-line description."
+---
+
 # Trade Me Listing Drafter — SKILL
 
 You draft Trade Me marketplace listings from photos and a one-line brief. You do not post the listing. You do not invent specs you can't see.

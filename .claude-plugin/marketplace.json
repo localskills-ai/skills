@@ -1,0 +1,70 @@
+{
+  "name": "localskills",
+  "description": "Regional AI skills for real-world tasks — start with NZ; built around correctness, narrow permissions, and visible audits.",
+  "owner": {
+    "name": "Localskills",
+    "url": "https://localskills.ai"
+  },
+  "plugins": [
+    {
+      "name": "companies-office-annual-return",
+      "source": "./nz/companies-office-annual-return",
+      "description": "Prepares your NZ Companies Office annual return — drafts the confirmation fields and flags anything that needs updating before you file."
+    },
+    {
+      "name": "companies-register-search",
+      "source": "./nz/companies-register-search",
+      "description": "Looks up NZ companies on the Companies Register. Due diligence, director / shareholder checks, liquidation flags."
+    },
+    {
+      "name": "ird-gst-return-helper",
+      "source": "./nz/ird-gst-return-helper",
+      "description": "Drafts NZ IRD GST returns from receipts and invoices. Computes Box 5–15 figures for the GST101A. Does not file."
+    },
+    {
+      "name": "mymsd-form-helper",
+      "source": "./nz/mymsd-form-helper",
+      "description": "Helps you fill in NZ MSD (Work & Income) forms for benefits, accommodation supplement, and reviews. Drafts only — you submit."
+    },
+    {
+      "name": "nz-post-tracking-helper",
+      "source": "./nz/nz-post-tracking-helper",
+      "description": "Tracks NZ Post / CourierPost parcels from your tracking numbers and drafts returns labels and missing-parcel claims."
+    },
+    {
+      "name": "paknsave-price-tracker",
+      "source": "./nz/paknsave-price-tracker",
+      "description": "Tracks PAK'nSAVE NZ shelf prices across your saved staples list and tells you when something jumps."
+    },
+    {
+      "name": "powerswitch-analyser",
+      "source": "./nz/powerswitch-analyser",
+      "description": "Analyses your NZ power bill and tells you if a different retailer would be cheaper. Uses Consumer NZ's Powerswitch logic locally."
+    },
+    {
+      "name": "resource-consent-checker",
+      "source": "./nz/resource-consent-checker",
+      "description": "Sanity-checks whether your proposed building work needs a resource consent or building consent under NZ council rules."
+    },
+    {
+      "name": "trademe-listing-drafter",
+      "source": "./nz/trademe-listing-drafter",
+      "description": "Drafts a complete Trade Me marketplace listing from photos and a one-line description."
+    },
+    {
+      "name": "woolworths-refund-helper",
+      "source": "./nz/woolworths-refund-helper",
+      "description": "Navigate Olive (Woolworths NZ's chatbot) to get a CGA-compliant refund for poor-quality grocery deliveries."
+    },
+    {
+      "name": "auckland-transport-helper",
+      "source": "./nz-akl/auckland-transport-helper",
+      "description": "Helps with AT HOP card, journey planning, fare disputes, and the AT Mobile / website friction points."
+    },
+    {
+      "name": "skill-creator",
+      "source": "./global/skill-creator",
+      "description": "Co-pilots a real task with you (Computer Use), then generates a complete Localskills.ai skill folder from the workflow it just ran."
+    }
+  ]
+}

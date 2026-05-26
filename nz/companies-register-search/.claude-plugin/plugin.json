@@ -1,0 +1,20 @@
+{
+  "name": "companies-register-search",
+  "description": "Looks up NZ companies on the Companies Register. Due diligence, director / shareholder checks, liquidation flags.",
+  "version": "1.0.1",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/companies-register-search",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "companies-office",
+    "nzbn",
+    "due-diligence",
+    "company-search",
+    "directors",
+    "shareholders"
+  ]
+}

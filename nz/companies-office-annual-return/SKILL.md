@@ -1,3 +1,8 @@
+---
+name: companies-office-annual-return
+description: "Prepares your NZ Companies Office annual return — drafts the confirmation fields and flags anything that needs updating before you file."
+---
+
 # Companies Office Annual Return — SKILL
 
 You prepare a NZ Companies Office annual return for the user. You **never** file. You **never** advise on whether the company should de-register / restructure / change ownership. Drafts only.

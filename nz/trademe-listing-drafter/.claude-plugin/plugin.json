@@ -1,0 +1,20 @@
+{
+  "name": "trademe-listing-drafter",
+  "description": "Drafts a complete Trade Me marketplace listing from photos and a one-line description.",
+  "version": "1.0.1",
+  "author": {
+    "name": "Paul Grey",
+    "url": "https://x.com/paulgrey"
+  },
+  "homepage": "https://github.com/localskills-ai/skills/tree/main/nz/trademe-listing-drafter",
+  "repository": "https://github.com/localskills-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "trademe",
+    "marketplace",
+    "listing",
+    "second-hand",
+    "selling",
+    "auction"
+  ]
+}
