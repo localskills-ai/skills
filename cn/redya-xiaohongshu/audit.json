@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "skill": {
+    "name": "redya-xiaohongshu",
+    "version": "1.0.0"
+  },
+  "auditedAt": "2026-11-18T14:01:23.805Z",
+  "validator": {
+    "name": "localskills-validate",
+    "version": "0.3.0"
+  },
+  "result": "pass-with-warnings",
+  "checks": [
+    "required-files",
+    "schema",
+    "permissions-scope",
+    "prompt-injection",
+    "malicious-code",
+    "undeclared-network",
+    "remote-exec",
+    "persistence",
+    "sensitive-paths"
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "check": "undeclared-network",
+      "message": "SKILL.md: references \"example.com\" which is not in permissions.network"
+    },
+    {
+      "check": "undeclared-network",
+      "message": "SKILL.md: references \"v.douyin.com\" which is not in permissions.network"
+    }
+  ],
+  "hashes": {
+    "CHANGELOG.md": "sha256:25b7a562292e9b9a2e1e145ac46c02791ca4b396dc79670def75644f1b042cfa",
+    "LICENSE": "sha256:cd96fb5afc1f933e390d30a7890c7392031115c55d8af8a743dc5b59fde1f527",
+    "README.md": "sha256:3fadcde4ea886f1e07207c820bea9db721fcc6c99eaaac51852653571c32e3f8",
+    "SKILL.md": "sha256:a77b34bc31a674fd0f6ad1f1ff4e37090acdcfddbc7de6a55bfd31cea7991447",
+    "examples/illustrated-post.md": "sha256:4f27a73653183d168b69bba55bf5c014e1cc07155ec13b3597c278d3d9f983b7",
+    "examples/live-photo.md": "sha256:1998e04359bc290b710d92d7f3a6080a81f4e5c8a8e7af2f82895a5bd0de1aa8",
+    "skill.json": "sha256:b7d806198b8d569ea5f6d921c6c1bcb3af4ee3d1f51f06383356f686518167ef"
+  }
+}
