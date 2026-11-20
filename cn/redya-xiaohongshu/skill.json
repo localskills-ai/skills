@@ -1,0 +1,30 @@
+{
+  "name": "redya-xiaohongshu",
+  "displayName": "小红书图文与实况图·红鸦 AI",
+  "version": "1.1.0",
+  "description": "Create illustrated and product posts, adapt reference posts, make Live Photos, review copy, and open the publishing editor with RedYA.",
+  "creator": {
+    "username": "rnthking",
+    "displayName": "红鸦 AI",
+    "url": "https://github.com/rnthking"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/rnthking/redya-skills/tree/main/skill/redya-xiaohongshu",
+  "regions": ["cn"],
+  "categories": ["retail", "business"],
+  "tags": ["xiaohongshu", "ecommerce", "marketing", "live-photo"],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "codex": ">=1.0.0"
+  },
+  "permissions": {
+    "fileSystem": ["read:user-selected-images", "read:working-directory", "write:working-directory"],
+    "network": ["hy.ithinkai.cn"],
+    "shell": ["curl", "python3"]
+  },
+  "pricing": {
+    "model": "free",
+    "price": 0
+  },
+  "safetyLevel": "high"
+}
