@@ -4,7 +4,7 @@
     "name": "redya-xiaohongshu",
     "version": "1.1.0"
   },
-  "auditedAt": "2026-11-20T02:08:56.478Z",
+  "auditedAt": "2026-11-20T03:40:54.852Z",
   "validator": {
     "name": "localskills-validate",
     "version": "0.3.0"
@@ -36,7 +36,7 @@
     "CHANGELOG.md": "sha256:f62c85a7e6a6ecc6ff671bfab967bb984e59400ea430cd86233a73b2acccae9f",
     "LICENSE": "sha256:cd96fb5afc1f933e390d30a7890c7392031115c55d8af8a743dc5b59fde1f527",
     "README.md": "sha256:2537c234c124d93b15ea82be96e64353c42b8ca122ad7999b8e12ffc38bf0a2e",
-    "SKILL.md": "sha256:5f6d6bab6e5400ab3adf9a30ed9af74d430426906998674dd02a50d445daff9b",
+    "SKILL.md": "sha256:59dbc4523488b226669e3abe9e7e93fc828ceb85f8fb9d8b22a34f9efe8f97e8",
     "examples/illustrated-post.md": "sha256:4f27a73653183d168b69bba55bf5c014e1cc07155ec13b3597c278d3d9f983b7",
     "examples/live-photo.md": "sha256:1998e04359bc290b710d92d7f3a6080a81f4e5c8a8e7af2f82895a5bd0de1aa8",
     "skill.json": "sha256:1edc75fdf2cbac6ab11e26c27ca50890e3de4cbea5d80b18fa4c7c1ef3e3a060"
